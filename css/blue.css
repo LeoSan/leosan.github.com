@@ -1,4 +1,9 @@
-
+/*
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
 @font-face {
     font-family: 'roboto_condensedregular';
     src: url('../fonts/RobotoCondensed-Regular-webfont.ttf') format('truetype');
@@ -10,11 +15,6 @@ body {
     font-family: 'roboto_condensedregular';
 	background:#ffffff;
 	font-size: 100%;
-}
-
-.hero-words{
-	color: white;
-	
 }
 .header_bg{
 	background: #76C7C0;
@@ -130,32 +130,15 @@ nav{margin:0;background:none;}.menu li{display:block;margin:0;}.menu li a{backgr
 @media (max-width: 480px) {}@media (max-width: 320px) {}
 /* start slider */
 
-.video-head {
-	width: 100%;
-}
 
 
-/* Menu Scroll */
 
-#scrolMenu{
-	padding-left: 30px;
-	width: 250px;
-	height: auto;
-	background-color: #F5F5F5;
-	color: #808B8D;
-	font-size: 20px;
-	position: fixed;
-	top: 241px;
-	right:0px;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-o-border-radius: 4px
-	box-shadow: inset 5px -2px 0px #DFDFDF;
-	-webkit-box-shadow: inset 5px -2px 0px #DFDFDF;
-	-moz-box-shadow: inset 5px -2px 0px #DFDFDF;
-	-o-box-shadow: inset 5px -2px 0px #DFDFDF;
-}
+
+
+
+
+
+
 
 
 
@@ -1513,57 +1496,24 @@ h3.style{
 /* Efecto bombillo */
 
 .even{
+	-webkit-transition:.6s;
+	-moz-transition:.2s;
+	cursor:pointer;
 
-	animation-name: even;
-	-webkit-animation-name: even;	
-
-	animation-duration: 3s;	
-	-webkit-animation-duration: 3s;
-
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
 }
 
-
-@keyframes even {
-	0% {
-		
-	    -webkit-transform:scale(1.1);
-	 	color: #52B3D9;
-	}
-	50%{
-		
-		-webkit-transform:scale(1.3);
-	 	color: #52B3D8;
-	}
-	65%{
-		
-		-webkit-transform:scale(1.9);
-	 	color: #52B3D7;
-
-	}
-	80%{
-		
-	   -webkit-transform:scale(1.3);
-	 	color: #52B3D6;
-
-	}
-	95%{
-		
-	   -webkit-transform:scale(1.1);
-	 	color: #52B3D5;
-
-	}			
+.even:hover {
+	-moz-transform:scale(2.5);
+	-webkit-transform:scale(2.5);
 	
+	color: #F4D03F;
 
 }
-
 
 .evenLetter{
 	-webkit-transition:.6s;
 	-moz-transition:.2s;
-	 cursor:pointer;
-	 font-family: verdana;
+	cursor:pointer;
 
 }
 
@@ -1574,60 +1524,7 @@ h3.style{
 
 }
 
-/* Efecto Fixed Parallax  */
 
-.parallax{
-	margin: 0px 0px 80px 0px;;
-    padding: 0;
-}
-
-
-.parallax-break{
-    box-shadow: inset 0 0 1em #111;
-    background-image: url('../imagen/teclado.jpg');
-}
-
-.break-lg{
-	position: relative;
-    height: 50vh;
-    text-indent: -9999px;
-    background-attachment: fixed;
-    background-position: top center;
-    background-size: cover;
-}
-
-.parallax-capture{
-    float: right;
-    width: 90%;
-    padding: 1em;
-    margin: -1.5em 1em 0 0;
-    text-indent: 0;
-    background: #47817E;
-    box-shadow: 0 1px 0.125em #333;
-    font-size: 20px;
-    font-weight:bold;
-    text-align: justify;
-    opacity: 0.5;
-}
-
-.parallax-capture:hover{
-    opacity: 1;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 22px;  
-}
-
-
-
-/* VIDEO  */
-.hosted-video {
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 
 /***** Media Quries *****/
