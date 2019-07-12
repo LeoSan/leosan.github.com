@@ -1,11 +1,4 @@
-/*
-* MIXITUP - A CSS3 & JQuery Filter and Sort Plugin
-* Version: 1.4.0
-* Author: Patrick Kunka
-* Copyright 2012-2013 Patrick Kunka, All Rights Reserved
-* FREE FOR NON-COMMERCIAL USE
-* http://www.mixitup.io
-*/
+
 (function(e){function m(d,b,h,c,a){function j(){k.unbind();b&&v(b,h,c,a);a.startOrder=[];a.newOrder=[];a.origSort=[];a.checkSort=[];u.removeStyle(a.prefix+"filter, filter, "+a.prefix+"transform, transform, opacity, display").css(a.clean).removeAttr("data-checksum");window.atob||u.css({display:"none",opacity:"0"});k.removeStyle(a.prefix+"transition, transition, "+a.prefix+"perspective, perspective, "+a.prefix+"perspective-origin, perspective-origin, "+(a.resizeContainer?"height":""));"list"==a.layoutMode?
 (q.css({display:a.targetDisplayList,opacity:"1"}),a.origDisplay=a.targetDisplayList):(q.css({display:a.targetDisplayGrid,opacity:"1"}),a.origDisplay=a.targetDisplayGrid);a.origLayout=a.layoutMode;setTimeout(function(){u.removeStyle(a.prefix+"transition, transition");a.mixing=!1;if("function"==typeof a.onMixEnd){var b=a.onMixEnd.call(this,a);a=b?b:a}})}clearInterval(a.failsafe);a.mixing=!0;if("function"==typeof a.onMixStart){var f=a.onMixStart.call(this,a);a=f?f:a}for(var g=a.transitionSpeed,f=0;2>
 f;f++){var n=0==f?n=a.prefix:"";a.transition[n+"transition"]="all "+g+"ms linear";a.transition[n+"transform"]=n+"translate3d(0,0,0)";a.perspective[n+"perspective"]=a.perspectiveDistance+"px";a.perspective[n+"perspective-origin"]=a.perspectiveOrigin}var r=a.targetSelector,u=c.find(r);u.each(function(){this.data={}});var k=u.parent();k.css(a.perspective);a.easingFallback="ease-in-out";"smooth"==a.easing&&(a.easing="cubic-bezier(0.25, 0.46, 0.45, 0.94)");"snap"==a.easing&&(a.easing="cubic-bezier(0.77, 0, 0.175, 1)");

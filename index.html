@@ -1,30 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-		<title>Leonard Cuenca | cuencaskill.3eeweb.com</title>
-		<!-- Bootstrap -->
-		<link href="css/bootstrap_002.css" rel="stylesheet" type="text/css">
-		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+		<title>Leonard Cuenca | </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+		
+	<!-- Bootstrap -->
+		<link href="css/bootstrap_002.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap.css"     rel="stylesheet" type="text/css">
+		<link href="css/blue.css"          rel="stylesheet" type="text/css" media="all">
+		<link href="css/hero_word.css"     rel="stylesheet" type="text/css" media="all">
+		
+	    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		
+	<!-- JS -->
 		<script src="js/ca-pub-9153409599391170.js" type="text/javascript" async="">	</script>
-		<link href="css/blue.css" rel="stylesheet" type="text/css" media="all">
-		<!----font-Awesome----->
-		   	<link rel="stylesheet" href="css/font-awesome.css">
-		   	<link rel="stylesheet" href="css/font-awesome.min.css">
-		<!----font-Awesome----->
-
-	<!-- start plugins -->
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap_002.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
-		
+	
 	<!--start slider -->
 	    <link rel="stylesheet" href="css/fwslider.css" media="all">
 	    <script src="js/jquery-ui.js"></script>
 	    <script src="js/css3-mediaqueries.js"></script>
 	    <script src="js/fwslider.js"></script>
 	<!--end slider -->
+
+	<!-- JS ESTUDIOS  -->
+		<script type="text/javascript" src="js/jquery_004.js"></script>
+		<script type="text/javascript" src="js/jquery_003.js"></script>
+		<script type="text/javascript" src="js/jquery_002.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				var filterList = {
+
+					init : function() {
+
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
+
+					},
+
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -30
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.css" media="screen">
+	<!-- JS ESTUDIOS  -->
+	
 	<!--start Codigo Google Analisis -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -37,189 +93,303 @@
 
 	</script>
 	<!--end Codigo Google Analisis -->
+
+	<script type="text/javascript" >
+                $(function() {
+
+                // Hero word switcher
+
+                var switcher = $('#hero-word-switcher');
+                var delay = 2000;
+                var count = switcher.find('strong').length;
+
+                function calculateWidths() {
+                    switcher.find('strong').each(function(index) {
+                        $(this).attr('data-width', $(this).width());
+                    });
+                    switcher.width(switcher.find('.active').attr('data-width'));
+                }
+                calculateWidths();
+
+                $(window).resize(function() {
+                    calculateWidths();
+                });
+
+                function doChange() {
+                    var nextItem;
+                    var currentItem = parseInt(switcher.find('.active').attr('data-oid'));
+
+                    if (currentItem == count - 1) {
+                        nextItem = 0;
+                    } else {
+                        nextItem = currentItem + 1;
+                    }
+
+                    switcher.addClass('in');
+
+                    switcher.find('[data-oid="' + currentItem + '"]').removeClass('active');
+                    switcher.find('[data-oid="' + nextItem + '"]').addClass('active');
+
+                    switcher.width(switcher.find('[data-oid="' + nextItem + '"]').attr('data-width'));
+                    setTimeout(doChange, delay);
+                }
+
+                setTimeout(doChange, delay);
+
+            });
+
+    </script>
+<!-- Animacion con scroll -->
+	    <script language="Javascript" type="text/javascript" src="js/aniCroll.js"></script>
+	    <script language="Javascript" type="text/javascript" src="js/aniCroll.noeasing.js"></script>
+
+
 </head>
-<body >
-<!-- Start Menu -->
-<div class="header_bg">
-	<div class="container">
-		<div class="header">
-			<div class="logo">
-				<div class="rotarY" align="center">
-					<a href="#"><img src="imagen/logo2.png" alt=""></a>
-				</div>	
-				<br />
-				<a href="#"><img src="imagen/logo.png" alt=""></a>
+<body>
+	<!-- Start Menu -->
+	<div class="header_bg">
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<div class="rotarY" align="center">
+						<a href="#"><img src="imagen/logo2.png" alt=""></a>
+					</div>	
+					<br />
+		
+		            <div class="wrapper hero-words" >
+		                <h1>
+		                    Leonard  
+		                    <span id="hero-word-switcher" class="in">
+		                        <strong class="active" data-oid="0" data-width="116">Cuenca</strong>
+		                        <strong data-oid="1" data-width="84" class="">Analiza</strong>
+		                        <strong data-oid="2" data-width="100" class="">Testing</strong>
+		                        <strong data-oid="3" data-width="300" class="">Diseña</strong>
+		                        <strong data-oid="4" data-width="500" class="">Evalua</strong>
+		                        <strong data-oid="5" data-width="600" class="">Codifica</strong>
+				                <strong data-oid="6" data-width="700" class="">Innova</strong>
+		                    </span>
+		                </h1>
+		            </div>
+				</div>
+				<div class="h_menu">
+				<a id="touch-menu" class="mobile-menu" href="#">Menu</a>
+				<nav>
+				<ul class="menu list-unstyled">
+					<li class="activate"><a href="index.html">Inicio</a></li>
+					<li class=""><a href="estudios.html">Estudios</a></li>
+					<li class=""><a href="#">Conocimientos</a>
+						<ul class="sub-menu list-unstyled">
+							<li><a href="back.html">Back-End</a></li>
+							<li><a href="front.html">Front-End</a></li>
+							<li><a href="gestion.html">Gestion Proyectos</a></li>
+							<li><a href="ambiente.html">Ambientes de Trabajo</a></li>
+						</ul>
+					</li>
+					<li class=""><a href="experiencia.html">Experiencia</a></li>
+					<li class=""><a href="desarrollo.html">Desarrollo</a></li>
+					<li class=""><a href="contactame.html">Cont&aacute;ctame </a></li>
+					
+				</ul>
+				</nav>
+				<script src="js/menu.js" type="text/javascript"></script>
+				</div>
+				<div class="clearfix"></div>
 			</div>
-			<div class="h_menu">
-			<a id="touch-menu" class="mobile-menu" href="#">Menu</a>
-			<nav>
-			<ul class="menu list-unstyled">
-				<li class="activate"><a href="#">Inicio</a></li>
-				<li><a href="estudios.html">Estudios</a></li>
-				<li><a href="#">Conocimientos</a>
-					<ul class="sub-menu list-unstyled">
-						<li><a href="back.html">Back-End</a></li>
-						<li><a href="front.html">Front-End</a></li>
-						<li><a href="gestion.html">Gestion Proyectos</a></li>
-						<li><a href="ambiente.html">Ambientes de Trabajo</a></li>
-					</ul>
-				</li>
-				<li><a href="experiencia.html">Experiencia</a></li>
-				<li><a href="desarrollo.html">Desarrollo</a></li>
-				<li><a href="contactame.html">Cont&aacute;ctame </a></li>
-				
-			</ul>
-			</nav>
-			<script src="js/menu.js" type="text/javascript"></script>
-			</div>
-			<div class="clearfix"></div>
 		</div>
 	</div>
-</div>
-<!-- End Menu -->
-<!-- start slider -->    
-    <div id="fwslider">
-        <div class="slider_container">
-            <div class="slide"> 
-                <!-- Slide image -->
-                    <img src="imagen/slider_1.png">
-                <!-- /Slide image -->
-                <!-- Texts container -->
-                <div class="slide_content">
-                    <div class="slide_content_wrap_2">
-                        <!-- Text title -->
-                        <h4 class="title"> El Conocimiento Crea un Libre Innovador.  </h4>
-                        <!-- /Text title -->
-                       
-                    </div>
-                </div>
-                 <!-- /Texts container -->
-            </div>
-            <!-- /Duplicate to create more slides -->
-            <div class="slide">
-                <img src="imagen/slider_2.png">
-                <div class="slide_content">
-                    <div class="slide_content_wrap">
-                        <h4 class="title">Si te caes siete veces, lev&aacute;ntate ocho.</h4>
-                        <p  class="description" style="font-size:20px">Las grandes almas tienen voluntades, las d&eacute;biles tan solo deseos.</p>
-                    </div>
-                </div>
-            </div>
-            <!--/slide -->
-        </div>
-        <div class="timers">
-        	<div class="timer">
-        		<div class="progress">
-        		</div>
-        	</div>
-        	<div class="timer">
-        		<div class="progress">
-        		</div>
-        	</div>
-        </div>
-        <div class="slideNext">
-        	<span>  </span> <!-- ATRAS -->
-        </div>
-        <div class="slidePrev">
-        	<span> </span> <!-- SIGUIENTE -->
-        </div>
-    </div><!--/slider -->
+	<!-- End Menu -->
 
-<!--start Contenedor -->
-<div class="container">
-	<div class="main_grid">
-		<div class="top_grid"><!-- start top_grid -->
-				<div class="col-md-2 span1_of_2">
-					<span class="active"><i class="even fa fa-lightbulb-o fa-5x"></i></span>
-				</div>
-				<div class="col-md-10 span1_of_1">
-					<h3 class="evenLetter">Joven Emprendedor Constructor de Medios Web, Entusiasta, Libre Innovador, Iniciado Parkour Felizmente Casado, Busco Nuevos Objetivos Y Trabajo Para Cumplirlos.</h3>
-				</div>
-				
-				<div class="clearfix"></div>
-		</div>
-		<div class="span_of_4"><!-- start span_of_4 -->
-			<div class="col-md-3 span1_of_4">
-				<div class="span4_of_list">
-					<img class="img-responsive rotarY" alt="" src="imagen/yoFormal2.png">
-					<div class="read_more">
-						<a href="cv_flat.pdf" class="btn btn-2 active">Leer M&aacute;s</a>
+		<!-- start slider -->    
+		    <div id="fwslider">
+		        <div class="slider_container">
+		            <div class="slide"> 
+		                <!-- Slide image -->
+		                    <img src="imagen/slider_1.png">
+		                <!-- /Slide image -->
+		                <!-- Texts container -->
+		                <div class="slide_content">
+		                    <div class="slide_content_wrap_2">
+		                        <!-- Text title -->
+		                        <h4 class="title"> El Conocimiento Crea un Libre Innovador.  </h4>
+		                        <!-- /Text title -->
+		                       
+		                    </div>
+		                </div>
+		                 <!-- /Texts container -->
+		            </div>
+		            <!-- /Duplicate to create more slides -->
+		            <div class="slide">
+		                <img src="imagen/slider_2.png">
+		                <div class="slide_content">
+		                    <div class="slide_content_wrap">
+		                        <h4 class="title">Si te caes siete veces, lev&aacute;ntate ocho.</h4>
+		                        <p  class="description" style="font-size:20px">Las grandes almas tienen voluntades, las d&eacute;biles tan solo deseos.</p>
+		                    </div>
+		                </div>
+		            </div>
+		            <!--/slide -->
+		          
+		            <!-- /Duplicate to create more slides -->
+		            <div class="slide">
+
+		            	<video autoplay="autoplay" muted="muted" loop="loop" class="video-head img-responsive" onended="this.play()" poster="imagen/bg_video2.mp4">
+							<source src="imagen/bg_video2.mp4" type="video/webm">
+						</video>
+
+		                <div class="slide_content">
+		                    <div class="slide_content_wrap">
+		                        <h4 class="title">prueba...</h4>
+		                        
+		                    </div>
+		                </div>
+		            </div>
+		            <!--/slide -->
+
+		            <!-- /Duplicate to create more slides -->
+				    <div class="slide">
+						<video autoplay="autoplay" muted="muted" loop="loop" class="video-head img-responsive" onended="this.play()" poster="imagen/slider_3.jpg">
+							<source src="imagen/slider_3.webm" type="video/webm">
+						</video>
+						<div class="slide_content">
+							<div class="slide_content_wrap">
+								<p class="description">Las Grandeza. Son muchas cosas pequeñas hechas bien.</p>
+							</div>
+		                </div>
+		            </div>
+		            <!--/slide -->
+
+
+		        </div>
+		        <div class="timers">
+		        	<div class="timer">
+		        		<div class="progress">
+		        		</div>
+		        	</div>
+		        	<div class="timer">
+		        		<div class="progress">
+		        		</div>
+		        	</div>
+		        </div>
+		        <div class="slideNext">
+		        	<span>  </span> <!-- ATRAS -->
+		        </div>
+		        <div class="slidePrev">
+		        	<span> </span> <!-- SIGUIENTE -->
+		        </div>
+		    </div>
+		<!-- End slider -->  
+	<!--start Contenedor -->
+	<div class="container">
+		<div class="main_grid">
+			<!-- start top_grid -->
+			<div class="top_grid">
+					<div class="col-md-2 span1_of_2">
+						<span class="active"><i class="even fa fa-lightbulb-o fa-5x"></i></span>
+					</div>
+					<div class="col-md-10 span1_of_1">
+						<h3 class="evenLetter">Joven Emprendedor Constructor de Medios Web, Entusiasta, Libre Innovador,  Busco Nuevos Objetivos Y Trabajo Para Cumplirlos.</h3>
+					</div>
+					
+					<div class="clearfix"></div>
+			</div>
+			<!-- end top_grid -->
+			
+			<!-- start span_of_4 -->
+			<div class="span_of_4">
+				<div class="col-md-3 span1_of_4">
+					<div class="span4_of_list">
+						<img class="img-responsive rotarY" alt="Yo" src="imagen/yoFormal2.png">
+						<div class="read_more">
+							<a href="CV_LEONARD_CUENCA_INGENIERO_ESP.pdf" target="_blank" class="btn btn-2 active">Leer M&aacute;s</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-3 span1_of_4">
-				<div class="span4_of_list">
-					<span><i class="fa fa-rocket"></i></span>
-					<h3>Jugar</h3>
-					<p>Lo divertido de crear e inovar cuando disfrutas tu trabajo, es saber que nos sentimos bien con nosotros mismos todo esta ligado con nuestra autoestima. </p>
-					<div class="read_more">
-						<a href="back.html" class="btn  btn-2b">Leer Mas</a>
+				<div class="col-md-3 span1_of_4">
+					<div class="span4_of_list">
+						<span><i class="fa fa-rocket"></i></span>
+						<h3>Jugar</h3>
+						<p>Lo divertido de crear e inovar cuando disfrutas tu trabajo, es saber que nos sentimos bien con nosotros mismos todo esta ligado con nuestra autoestima. </p>
+						<div class="read_more">
+							<a href="mini_juegos.html" class="btn  btn-2b">Leer Mas</a>
+						</div>	
 					</div>	
-				</div>	
-			</div>
-			<div class="col-md-3 span1_of_4">
-				<div class="span4_of_list">
-					<span><i class="fa fa-flag"></i></span>
-					<h3>Aprender</h3>
-					<p>La mejor manera de afrontar los retos es tomar tus mejores herramientas y empezar un proyecto manual. ya que la mejor forma de aprender es haciendo.</p>
-					<div class="read_more">
-						<a href="single-page.html" class="btn btn-2b">Leer Mas</a>
-					</div>		
 				</div>
-			</div>
-			<div class="col-md-3 span1_of_4">
-				<div class="span4_of_list">
-					<span><i class="fa fa-flask"></i></span>
-					<h3>Ense&ntilde;ar</h3>
-					<p>Ense&ntilde;ar a otros la mejor forma de retribuir y fortalecer las habilidades y experiencias. Hacer el bien sin mirar a quien.</p>
-					<div class="read_more">
-						<a href="single-page.html" class="btn btn-2b">Leer Mas</a>
-					</div>						
+				<div class="col-md-3 span1_of_4">
+					<div class="span4_of_list">
+						<span><i class="fa fa-flag"></i></span>
+						<h3>Aprender</h3>
+						<p>La mejor manera de afrontar los retos es tomar tus mejores herramientas y empezar un proyecto manual. ya que la mejor forma de aprender es haciendo.</p>
+						<div class="read_more">
+							<a href="desarrollo_personal.html" class="btn btn-2b">Leer Mas</a>
+						</div>		
+					</div>
 				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div><!-- end span_of_4 -->
-	</div>
-</div>
-
-<div class="main_btm">
-	<div class="container">
-		
-			<div class="col-md-12 span1_of_3" align="center">
-				
-				<div class="clients" background="#ecf0f1">
-				
-					<iframe class="video" width="700" height="500" src="http://www.powtoon.com/embed/btooY3SMLfU/" frameborder="0"></iframe>
-					
+				<div class="col-md-3 span1_of_4">
+					<div class="span4_of_list">
+						<span><i class="fa fa-flask"></i></span>
+						<h3>Ense&ntilde;ar</h3>
+						<p>Ense&ntilde;ar a otros la mejor forma de retribuir y fortalecer retribuir y fortalecer las habilidades y experiencias. Hacer el bien sin mirar a quien.</p>
+						<div class="read_more">
+							<a href="articulos.html" class="btn btn-2b">Leer Mas</a>
+						</div>						
+					</div>
 				</div>
-			</div>
-			
-		
 
-	</div>
-</div>
-
-
-
-<!--End Contenedor -->
-	
-	<div class="footer_bg"><!-- start footer -->
-		<div class="container">
-			<div class="footer">
-				<div class="col-md-4 footer1_of_3">
-					<div class="f_logo">
-						<a href="index.html">
-							<img src="imagen/logo.png" alt=""></a>
-					</div>	
-					
-			        <div class="copyright">
-        				<p>Desarrollo 2013&nbsp;-&nbsp;2014, Todos los derechos Reservados.</p>
-      				</div>
-				
-				</div>
 				<div class="clearfix"></div>
 			</div>
+			<!-- end span_of_4 -->
+
 		</div>
 	</div>
+	<!--End Contenedor -->
+	<section class="">
+			<div class="parallax">
+					<div class="parallax-break break-lg">					
+						<div class="parallax-capture">
+						Martha Beck, El “sí” es la emoción o la inspiración que te impulsa a seguir lo que te apasiona; El “pero” es la intromisión del miedo que evita que lo hagas.
+						</div>
+					</div>
+		</div>
+	</div>
+
+
+	</section> 
+
+
+	<div class="main_btm">
+		<div class="container">
+			
+				<div class="col-md-12 span1_of_3" align="center">
+					
+					<div class="clients" background="#ecf0f1">
+					
+						<iframe class="video" width="700" height="500" src="http://www.powtoon.com/embed/btooY3SMLfU/" frameborder="0"></iframe>
+						
+					</div>
+				</div>
+		</div>
+	</div>
+<!-- start footer -->
+	<div class="footer_bg">
+	<div class="container">
+		<div class="footer">
+			<div class="col-md-4 footer1_of_3">
+				<div class="f_logo">
+					<a href="index.html">
+						<img src="imagen/logo.png" alt=""></a>
+				</div>	
+				
+		        <div class="copyright">
+					<p>Desarrollo 2013&nbsp;-&nbsp;2019, Todos los derechos Reservados.</p>
+					</div>
+			
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	</div>
+	<!-- ends footer -->
+
 </body>
 </html>
+
