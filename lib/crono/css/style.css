@@ -125,7 +125,7 @@ h1,h2,h4,h5,h6 {
 		#grad_left,
 		#grad_right {
 			width: 100px;
-			height: 350px;
+			height: 150px;
 			position: absolute;
 			top: 0;
 		}
