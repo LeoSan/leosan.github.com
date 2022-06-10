@@ -45,9 +45,9 @@ h1,h2,h4,h5,h6 {
 
 	#timeline {
 		width: 800px;
-		height: 350px;
+		height: 550px;
 		overflow: hidden;
-		margin: 100px auto;
+		margin: 20px auto;
 		position: relative;
 		background: url('../images/dot.gif') left 45px repeat-x;
 	}
@@ -75,12 +75,12 @@ h1,h2,h4,h5,h6 {
 		
 		#issues {
 			width: 800px;
-			height: 350px;
+			height: 550px;
 			overflow: hidden;
 		}	
 			#issues li {
 				width: 800px;
-				height: 350px;
+				height: 550px;
 				list-style: none;
 				float: left;
 			}
@@ -110,10 +110,9 @@ h1,h2,h4,h5,h6 {
 				    transform: scale(0.7,0.7);
 				}
 				#issues li h1 {
-					color: white; /*Color de la fecha interna #ffcc00 */
-					font-size: 48px;
-					margin: 20px 0;
-					text-shadow: #000 1px 1px 2px;
+					color: #34495e; 
+					font-size: 44px;
+					
 				}
 				#issues li p {
 					font-size: 14px;

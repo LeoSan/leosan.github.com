@@ -1,142 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Leonard Cuenca | </title>
+		<title>Leonard Cuenca | Experiencia</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+		<meta http-equiv="content-type" content="text/html; charset=utf8">
 		
 	<!-- Bootstrap -->
-		<link href="css/bootstrap_002.css" rel="stylesheet" type="text/css">
 		<link href="css/bootstrap.css"     rel="stylesheet" type="text/css">
 		<link href="css/blue.css"          rel="stylesheet" type="text/css" media="all">
-		<link href="css/hero_word.css"     rel="stylesheet" type="text/css" media="all">
+		<link href="css/modul-experiencia.css"     rel="stylesheet" type="text/css" media="all">
 		
 	    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		
 	<!-- JS -->
-		<script src="js/ca-pub-9153409599391170.js" type="text/javascript" async="">	</script>
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/bootstrap_002.js"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
-	
-	<!--start slider -->
-	    <link rel="stylesheet" href="css/fwslider.css" media="all">
-	    <script src="js/jquery-ui.js"></script>
-	    <script src="js/css3-mediaqueries.js"></script>
-	    <script src="js/fwslider.js"></script>
-	<!--end slider -->
-
-	<!-- JS ESTUDIOS  -->
-		<script type="text/javascript" src="js/jquery_004.js"></script>
-		<script type="text/javascript" src="js/jquery_003.js"></script>
-		<script type="text/javascript" src="js/jquery_002.js"></script>
-		<script type="text/javascript">
-			$(function() {
-
-				var filterList = {
-
-					init : function() {
-
-						// MixItUp plugin
-						// http://mixitup.io
-						$('#portfoliolist').mixitup({
-							targetSelector : '.portfolio',
-							filterSelector : '.filter',
-							effects : ['fade'],
-							easing : 'snap',
-							// call the hover effect
-							onMixEnd : filterList.hoverEffect()
-						});
-
-					},
-
-					hoverEffect : function() {
-
-						// Simple parallax effect
-						$('#portfoliolist .portfolio').hover(function() {
-							$(this).find('.label').stop().animate({
-								bottom : 0
-							}, 200, 'easeOutQuad');
-							$(this).find('img').stop().animate({
-								top : -30
-							}, 500, 'easeOutQuad');
-						}, function() {
-							$(this).find('.label').stop().animate({
-								bottom : -40
-							}, 200, 'easeInQuad');
-							$(this).find('img').stop().animate({
-								top : 0
-							}, 300, 'easeOutQuad');
-						});
-
-					}
-				};
-
-				// Run the show!
-				filterList.init();
-
-			});
-		</script>
-		<link rel="stylesheet" type="text/css" href="css/jquery.css" media="screen">
-	<!-- JS ESTUDIOS  -->
-	
-	<!--start Codigo Google Analisis -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53207600-2"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-53207600-2');
-		</script>
-	<!--end Codigo Google Analisis -->
-
-	<script type="text/javascript" >
-                $(function() {
-
-                // Hero word switcher
-
-                var switcher = $('#hero-word-switcher');
-                var delay = 2000;
-                var count = switcher.find('strong').length;
-
-                function calculateWidths() {
-                    switcher.find('strong').each(function(index) {
-                        $(this).attr('data-width', $(this).width());
-                    });
-                    switcher.width(switcher.find('.active').attr('data-width'));
-                }
-                calculateWidths();
-
-                $(window).resize(function() {
-                    calculateWidths();
-                });
-
-                function doChange() {
-                    var nextItem;
-                    var currentItem = parseInt(switcher.find('.active').attr('data-oid'));
-
-                    if (currentItem == count - 1) {
-                        nextItem = 0;
-                    } else {
-                        nextItem = currentItem + 1;
-                    }
-
-                    switcher.addClass('in');
-
-                    switcher.find('[data-oid="' + currentItem + '"]').removeClass('active');
-                    switcher.find('[data-oid="' + nextItem + '"]').addClass('active');
-
-                    switcher.width(switcher.find('[data-oid="' + nextItem + '"]').attr('data-width'));
-                    setTimeout(doChange, delay);
-                }
-
-                setTimeout(doChange, delay);
-
-            });
-
-    </script>
 <!-- Animacion con scroll -->
 	    <script language="Javascript" type="text/javascript" src="js/aniCroll.js"></script>
 	    <script language="Javascript" type="text/javascript" src="js/aniCroll.noeasing.js"></script>
@@ -156,17 +34,7 @@
 		
 		            <div class="wrapper hero-words" >
 		                <h1>
-		                    Leonard  
-		                    <span id="hero-word-switcher" class="in">
-		                        <strong class="active" data-oid="0" data-width="116">Cuenca</strong>
-		                        <strong data-oid="1" data-width="84" class="">Analiza</strong>
-		                        <strong data-oid="2" data-width="100" class="">Organiza</strong>
-		                        <strong data-oid="3" data-width="300" class="">Diseña</strong>
-		                        <strong data-oid="4" data-width="500" class="">Evalua</strong>
-		                        <strong data-oid="5" data-width="600" class="">Codifica</strong>
-				        <strong data-oid="6" data-width="700" class="">Innova</strong>
-		                    </span>
-		                    
+		                    Leonard  Cuenca
 		                </h1>
 		              
 		            </div>
@@ -176,7 +44,7 @@
 				<a id="touch-menu" class="mobile-menu" href="#">Menu</a>
 				<nav>
 				<ul class="menu list-unstyled">
-					<li class="activate"><a href="index.html">Inicio</a></li>
+					<li ><a href="index.html">Inicio</a></li>
 					<li class=""><a href="estudios.html">Estudios</a></li>
 					<li class=""><a href="#">Conocimientos</a>
 						<ul class="sub-menu list-unstyled">
@@ -186,7 +54,7 @@
 							<li><a href="ambiente.html">Ambientes de Trabajo</a></li>
 						</ul>
 					</li>
-					<li class=""><a href="experiencia.html">Experiencia</a></li>
+					<li class="activate"><a href="experiencia.html">Experiencia</a></li>
 					<li class=""><a href="desarrollo.html">Desarrollo</a></li>
 					<li class=""><a href="contactame.html">Cont&aacute;ctame </a></li>
 					
@@ -221,7 +89,7 @@
 				<h3 class="style pull-left">Experiencia</h3>
 				<ol class="breadcrumb pull-right">
 				  <li><a href="index.html">Inicio</a></li>
-				  <li class="active">Empresas</li>
+				  <li class="active">Experiencia</li>
 				</ol>
 				<div class="clearfix"></div>
 			</div>
@@ -229,9 +97,7 @@
 	</div>
 <!-- end Titulo -->
 <!--start Contenedor -->
-
 	<div class="container">
-		
 		<div id="timeline">
 		<ul id="dates">
 			<li><a href="#2008">2008</a></li>
@@ -250,129 +116,195 @@
 			<li id="2008">
 				<img src="lib/crono/images/mv_inter.gif" width="204" height="60" />
 				<h1>Mv Internacional C.A</h1>
-					<p><strong>Caracas, Venezuela</strong></p>
-					<p><strong>Cargo: Analista Soporte</strong></p>
-				    <strong>Responsabilidades: </strong><br />
-					<ul>
-						<li>
-							Mantenimiento Preventivo de los Equipos de los Usuarios
-						</li>
-						<li>
-							Mantenimiento de Preventivo de las Impresoras
-						</li>
-						<li>
-							Mantenimiento de las Redes de Comunicaci&oacute;n
-						</li>						
-						<li>
-							Monitoreo de los Servicios del Servidor
-						</li>						
-						<li>
-							Mantenimiento de Ploter EPSON (SureColor F6070 ).Reparaci&oacute; Impresoras Evolis y Zebra
-						</li>
-					</ul>
-					<strong>Logros: </strong><br />
-					<strong>Web: http://www.mvinternational.com.ve/<br />
-					Tlf: (+58 212) 860.25.68 / 55.00 / 06.98 <br />
-					</strong>
-
+				<div class="cont-descrip-exp">
+					<div class="cont-exp-lef">
+						<div><span class="label-titulo">Lugar</span><p><b>Caracas, Venezuela</b></p></div>
+						<div><span class="label-titulo">Cargo</span><p><b>Analista Soporte Técnico</b></p></div>
+						<div><span class="label-titulo">Sitio web</span><p><a href="http://www.mvinternational.com.ve" target="_blank" >www.mvinternational.com.ve</a> </p></div>
+						<div><span class="label-titulo">Teléfono</span><p><b>(+58 212) 860.25.68 / 55.00 / 06.98</b> </p></div>
+					</div>
+					<div class="cont-exp-right">
+						<div><span class="label-titulo">Reponsabilidades</span></div><br/>					<div>
+							<ul>
+								<ol>Mantenimiento Preventivo de los Equipos de computo de los Usuarios.</ol>								
+								<ol>Mantenimiento de Preventivo de las Impresoras.</ol>								
+								<ol>Mantenimiento de las Redes de Comunicaci&oacute;n.</ol>								
+								<ol>Monitoreo de los Servicios del Servidor.</ol>								
+								<ol>Mantenimiento de Ploter EPSON (SureColor F6070 ).</ol>								
+								<ol>Reparaci&oacute; Impresoras Evolis y Zebra.</ol>								
+							</ul>
+						</div>	
+					</div>
+				</div>
 			</li>
 			<li id="2009">
-				<img src="lib/crono/images/TradeSolution.png" width="204" height="80" />
+				<img src="lib/crono/images/TradeSolution.png" width="180" height="60" />
 				<h1>Trade Solutions C.A</h1>
-				<p><strong>Caracas, Venezuela</strong></p>
-				<p><strong>Cargo: Programador Jr</strong></p>
-				    <strong>Responsabilidades: </strong><br />
-					Levantamiento de Requerimientos,
-					Dise&ntilde;o y An&aacute;lisis de Requerimientos, 
-					Desarrollo de Requerimientos,
-					Pruebas e Implementaci&oacute;n de Sistemas,
-					Entrenamiento de Personal,
-					Documentaci&oacute;n del Sistema,  
-					Manuales de Usuarios<br />
-					<strong>Web: http://www.grupotradela.com/index_new.php/<br /></strong>
+				<div class="cont-descrip-exp">
+					<div class="cont-exp-lef">
+						<div><span class="label-titulo">Lugar</span><p><b>Caracas, Venezuela</b></p></div>
+						<div><span class="label-titulo">Cargo</span><p><b>Programador Jr Php</b></p></div>
+						<div><span class="label-titulo">Sitio web</span><p><a href="https://www.grupotradela.com/" target="_blank" >www.grupotradela.com</a> </p></div>
+						<div><span class="label-titulo">Tecnolog&iacute;as</span><p><b>PHP 5, JavaScript, Ajax, HTML, functionChart, Mysql</b> </p></div>
+					</div>
+					<div class="cont-exp-right">					
+						<div>
+							<span class="label-titulo">Reponsabilidades</span></div><br/>					<div>
+							<ul>
+								<ol>Análisis  de la arquitectura a implementar.</ol>								
+								<ol>Levantamiento de requerimientos.</ol>								
+								<ol>Dise&ntilde;o y an&aacute;lisis de requerimientos.</ol>								
+								<ol>Desarrollo de requerimientos.</ol>								
+								<ol>Pruebas e implementaci&oacute;n de sistemas.</ol>								
+								<ol>Entrenamiento de personal en el uso de los sistemas.</ol>								
+								<ol>Documentación del proyecto y generación de manuales de usuarios.</ol>								
+								<ol>Mantenimiento de bases de datos.</ol>								
+							</ul>
+						</div>					
+					</div>					
+				</div>				
 			</li>
 			<li id="2011">
-				<img src="lib/crono/images/LOGOconRIF.png" width="160" height="100" />
+				<img src="lib/crono/images/LOGOconRIF.png" width="100" height="60" />
 				<h1>Meysys Ingenier&iacute;a C.A</h1>
-				<p><strong>Caracas, Venezuela</strong></p>
-				<p><strong>Cargo: Programador Web</strong></p>
-				    <strong>Responsabilidades: </strong><br />
-					Levantamiento de Requerimientos,
-					Dise&ntilde;o y An&aacute;lisis de Requerimientos, 
-					Desarrollo de Requerimientos,
-					Pruebas e Implementaci&oacute;n de Sistemas,
-					Entrenamiento de Personal,
-					Documentaci&oacute;n del Sistema,  
-					Manuales de Usuarios<br />
-					Manuales T&eacute;nico<br />
-					<strong>Web: http://www.meysys.com/<br /></strong>
+					<div class="cont-descrip-exp">
+						<div class="cont-exp-lef">
+							<div><span class="label-titulo">Lugar</span><p><b>Caracas, Venezuela</b></p></div>
+							<div><span class="label-titulo">Cargo</span><p><b>Web Master Jr PHP</b></p></div>
+							<div><span class="label-titulo">Sitio web</span><p><a href="https://www.asdphone.com/meysys-ingenieria-c-a-ingenieros-consultores-293767e" target="_blank" >www.meysys.com</a> </p></div>
+							<div><span class="label-titulo">Tecnolog&iacute;as</span><p><b>PHP 6, JavaScript, Ajax, Jquery 1.0, HTML5, functionChart, Mysql, Postgresql</b> </p></div>
+						</div>
+						<div class="cont-exp-right">					
+							<div>
+								<span class="label-titulo">Reponsabilidades</span></div><br/>					
+							<div>
+								<ul>
+									<ol>Análisis  de la arquitectura a implementar.</ol>								
+									<ol>Levantamiento de requerimientos.</ol>								
+									<ol>Dise&ntilde;o y an&aacute;lisis de requerimientos.</ol>								
+									<ol>Desarrollo de requerimientos.</ol>								
+									<ol>Pruebas e implementaci&oacute;n de sistemas.</ol>				
+									<ol>Despliegue del sistema en servidores.</ol>				
+									<ol>Entrenamiento de personal en el uso de los sistemas.</ol>								
+									<ol>Documentación del proyecto y generación de manuales de usuarios y técnico.</ol>								
+									<ol>Mantenimiento de bases de datos.</ol>								
+								</ul>
+							</div>					
+						</div>					
+					</div>				
 			</li>
 			<li id="2012">
-				<img src="lib/crono/images/4geeks.png" width="160" height="100" />
+				<img src="lib/crono/images/4geeks.png" width="100" height="60" />
 				<h1>4Geeks C.A </h1>
-				<p><strong>Caracas, Venezuela</strong></p>
-				<p><strong>Cargo: Programador Front-End (FreeLance)</strong></p>
-				    <strong>Responsabilidades: </strong><br />
-					Maquetaci&oacute;n web
-					<strong>Web: http://www.4geeks.co/<br />
-					Tlf: (+58 0212) 238 10 51 <br />		
-					</strong>
+					<div class="cont-descrip-exp">
+						<div class="cont-exp-lef">
+							<div><span class="label-titulo">Lugar</span><p><b>Caracas, Venezuela</b></p></div>
+							<div><span class="label-titulo">Freelancer</span><p><b>Programador Front-End</b></p></div>
+							<div><span class="label-titulo">Sitio web</span><p><a href="https://4geeksacademy.com/es/inicio" target="_blank" >www.4Geeks.com</a> </p></div>
+							<div><span class="label-titulo">Tecnolog&iacute;as</span><p><b>PhotoShop css3, JavaScript, Jquery 2.0, HTML5, Flex, responsive desing</b> </p></div>
+						</div>
+						<div class="cont-exp-right">					
+							<div>
+								<span class="label-titulo">Reponsabilidades</span></div><br/>					
+							<div>
+								<ul>
+									<ol>Validación de PSD.</ol>								
+									<ol>Entregables de interfaces.</ol>								
+									<ol>Desarrollo front-end.</ol>								
+								</ul>
+							</div>					
+						</div>					
+					</div>	
+					
+					
 			</li>
 			<li id="2013">
-				<img src="lib/crono/images/micorp.png" width="190" height="80" />
+				<img src="lib/crono/images/micorp.png" width="150" height="60" />
 				<h1>Consultores Micorp C.A </h1>
-				<p><strong>Caracas, Venezuela</strong></p>
-				<p><strong>Cargo: Analista Desarrollador Web</strong></p>
-				    <strong>Responsabilidades: </strong><br />
-					An&aacute;nalisis de Desarrollo,
-					Desarrollo del Proyecto,
-					Pruebas e Implementaci&oacute;n de Sistemas,
-					Script de Prueba,
-					Script de Seguridad,
-					Documentaci&oacute;n del Sistema,<br />  
-					<strong>Web: http://www.micorp.com.ve//<br />
-					Tlf: (+58 212) 577.1045 <br />		
-					</strong>
+					<div class="cont-descrip-exp">
+						<div class="cont-exp-lef">
+							<div><span class="label-titulo">Lugar</span><p><b>Caracas, Venezuela</b></p></div>
+							<div><span class="label-titulo">Cargo</span><p><b>Analista Desarrollador Web PHP</b></p></div>
+							<div><span class="label-titulo">Sitio web</span><p><a href="https://www.linkedin.com/company/consultoresmicorpc.a./about/" target="_blank" >www.micorp.com.ve</a> </p></div>
+							<div><span class="label-titulo">Teléfono</span><p> (+58 212) 577.1045</p></div>
+							<div><span class="label-titulo">Tecnolog&iacute;as</span><p><b>PHP 6, css3, JavaScript, Jquery 2.0, HTML5, Flex, responsive desing, PostgreSQL, CakePhp Framework</b> </p></div>
+						</div>
+						<div class="cont-exp-right">					
+							<div>
+								<span class="label-titulo">Reponsabilidades</span></div><br/>					
+							<div>
+								<ul>
+									<ol>Análisis  de requerimientos.</ol>								
+									<ol>Desarrollo y codificación proyecto.</ol>								
+									<ol>Desarrollo y mantenimiento de bases de datos.</ol>								
+									<ol>Script de Prueba.</ol>								
+									<ol>Script de Seguridad.</ol>								
+									<ol>Documentaci&oacute;n del Sistema.</ol>								
+								</ul>
+							</div>					
+						</div>					
+					</div>					
 			</li>
 			<li id="2014">
-				<img src="lib/crono/images/bussiness.png" width="190" height="80" />
+				<img src="lib/crono/images/bussiness.png" width="150" height="60" />
 				<h1>Business Hunters C.A </h1>
-				<p><strong>Caracas, Venezuela</strong></p>
-				<p><strong>Cargo: Analista Desarrollador Semi-Senior </strong></p>
-				    <strong>Responsabilidades: </strong><br />
-					An&aacute;nalisis de Desarrollo,
-					Desarrollo del Proyecto,
-					Documentaci&oacute;n T&eacute;cnica de Sistemas,<br />  
-					<strong>Web: http://www.businesshunters.com.ve/<br />
-					Tlf: +58 212 761.8222  <br />
+				<div class="cont-descrip-exp">
+					<div class="cont-exp-lef">
+						<div><span class="label-titulo">Lugar</span><p><b>Caracas, Venezuela</b></p></div>
+						<div><span class="label-titulo">Cargo</span><p><b>Analista Desarrollador Semi-Senior</b></p></div>
+						<div><span class="label-titulo">Sitio web</span><p><a href="http://pymesvenezuela.com/ficha/business-hunters-ca-118523" target="_blank" >www.micorp.com.ve</a> </p></div>
+						<div><span class="label-titulo">Teléfono</span><p> +58 0414-205.8882</p></div>
+						<div><span class="label-titulo">Tecnolog&iacute;as</span><p><b>PHP 6, Python 2.0, Django 2.0, Java 4.0, SprintJava, css3, JavaScript, HTML5, responsive desing, PostgreSQL</b> </p></div>
+					</div>
+					<div class="cont-exp-right">					
+						<div>
+							<span class="label-titulo">Reponsabilidades</span></div><br/>					
+						<div>
+							<ul>
+								<ol>Análisis de requerimientos.</ol>								
+								<ol>Documentación e historias de usuarios.</ol>								
+								<ol>Implementación de metodología agiles.</ol>								
+								<ol>Desarrollo y codificación proyecto POO.</ol>								
+								<ol>Desarrollo y mantenimiento de bases de datos.</ol>								
+								<ol>Desarrollo de script SP-SQL en PostgreSQL.</ol>								
+								<ol>Mantenimiento de servicios web.</ol>								
+								<ol>Desarrollo de DTO.(Data Transfer Object)</ol>								
+							</ul>
+						</div>					
+					</div>					
+				</div>					
 
-					
-					</strong>
 			</li>
 
 			<li id="2015">
-				<img src="lib/crono/images/core.png" width="190" height="80" />
+				<img src="lib/crono/images/core.png" width="190" height="60" />
 				<h1>Core One C.V </h1>
-				<p><strong>CDMX, Mexico</strong></p>
-				<p><strong>Cargo: Desarrollador Semi-Senior </strong></p>
-				    <strong>Responsabilidades: </strong><br />
-					An&aacute;nalisis de Desarrollo,
-					Desarrollo de M&oacute;dulo,
-					Documentaci&oacute;n T&eacute;cnica de Sistemas,<br />  
-					<strong>Web: http://www.coreoneit.com/<br />
-					Tlf: +52 55 3220.4280  <br />
-
-					<strong>Tecnolog&iacute;a: </strong><br />	
-					PHP 5,
-					
-					PhpStorm, 
-					CodeIgnater,
-					JavaScript,
-					Jquery,
-					HTML 5<br />
-
-							
-					</strong>
+				
+				
+				<div class="cont-descrip-exp">
+					<div class="cont-exp-lef">
+						<div><span class="label-titulo">Lugar</span><p><b>CDMX, México</b></p></div>
+						<div><span class="label-titulo">Cargo</span><p><b>Analista Desarrollador Semi-Senior PHP</b></p></div>
+						<div><span class="label-titulo">Sitio web</span><p><a href="https://www.coreoneit.com/es/index.html" target="_blank" >www.coreoneit.com</a> </p></div>
+						<div><span class="label-titulo">Teléfono</span><p><b>+58 0414-205.8882</b></p></div>
+						<div><span class="label-titulo">Tecnolog&iacute;as</span><p><b>PHP 6, PhpStorm, CodeIgnater, JavaScript, Jquery, HTML 5, Mysql</b> </p></div>
+					</div>
+					<div class="cont-exp-right">					
+						<div>
+							<span class="label-titulo">Reponsabilidades</span>
+						</div><br/>				
+						<div>
+							<ul>
+								<ol>Análisis de requerimientos.</ol>								
+								<ol>Documentación e historias de usuarios.</ol>								
+								<ol>Implementación de metodología agiles.</ol>								
+								<ol>Desarrollo y codificación proyecto POO.</ol>								
+								<ol>Desarrollo y mantenimiento de bases de datos.</ol>								
+							</ul>
+						</div>					
+					</div>	
+						
+				</div>					
 			</li>
 
 			<li id="2016">

@@ -1,0 +1,16 @@
+.cont-descrip-exp{
+	width: auto;
+    height: auto;
+    margin: 30px;
+}
+
+.label-titulo{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cont-exp-lef{
+    float: left;
+    width: 300px;
+    height: 300px;
+}
