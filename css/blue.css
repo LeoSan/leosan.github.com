@@ -871,10 +871,8 @@ h3.style{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
-	width:23%;
 	margin:1%;
 	display:none;
-	float:left;
 	overflow:hidden;
 }
 .portfolio-wrapper {
@@ -919,6 +917,22 @@ h3.style{
 	font-weight: 100;
 	margin-top: 5px;
 }
+.portfolio .card-title{
+	font-size:20px;
+	font-weight: 400;
+	color:#47817E;
+	text-align:center;
+}
+.portfolio .card-text{
+	font-size:12px;
+	text-align:justify;
+}
+
+
+
+
+
+
 /* Self Clearing Goodness */
 .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
@@ -1177,7 +1191,6 @@ h3.style{
 
 
 
-
 /*start features*/
 .features {
 	background: #e8e8e8;
@@ -1341,7 +1354,7 @@ h3.style{
 }
 .btn{
 	font-family: 'roboto_condensedregular';
-	font-size: 14px;
+	font-size: 17px;
 	color: #FFFFFF !important;
 	padding: 12px 30px;
 	background: #62A29E;
@@ -1828,7 +1841,7 @@ h3.style{
 		margin:15px 0 10px;
 	}
 	#portfoliolist .portfolio {
-		width: 48%;
+		/*width: 48%;*/
 	}
 	.cau_hide{
 		display: none !important;
