@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+		<title>Leonard Cuenca | Blockchain </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html; charset=UTF8">
+		
+	<!-- Bootstrap -->
+		<link href="css/bootstrap_002.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap.css"     rel="stylesheet" type="text/css">
+		<link href="css/blue.css"          rel="stylesheet" type="text/css" media="all">
+		<link href="css/hero_word.css"     rel="stylesheet" type="text/css" media="all">
+		
+	    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		
+	<!-- JS -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap_002.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	
+	<!--start slider -->
+	    <link rel="stylesheet" href="css/fwslider.css" media="all">
+	    <script src="js/jquery-ui.js"></script>
+	    <script src="js/css3-mediaqueries.js"></script>
+	    <script src="js/fwslider.js"></script>
+	<!--end slider -->
+
+	<!-- JS ESTUDIOS  -->
+		<script type="text/javascript" src="js/jquery_004.js"></script>
+		<script type="text/javascript" src="js/jquery_003.js"></script>
+		<script type="text/javascript" src="js/jquery_002.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				var filterList = {
+
+					init : function() {
+
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
+
+					},
+
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -30
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.css" media="screen">
+	<!-- JS ESTUDIOS  -->
+	
+
+	<script type="text/javascript" >
+                $(function() {
+
+                // Hero word switcher
+
+                var switcher = $('#hero-word-switcher');
+                var delay = 2000;
+                var count = switcher.find('strong').length;
+
+                function calculateWidths() {
+                    switcher.find('strong').each(function(index) {
+                        $(this).attr('data-width', $(this).width());
+                    });
+                    switcher.width(switcher.find('.active').attr('data-width'));
+                }
+                calculateWidths();
+
+                $(window).resize(function() {
+                    calculateWidths();
+                });
+
+                function doChange() {
+                    var nextItem;
+                    var currentItem = parseInt(switcher.find('.active').attr('data-oid'));
+
+                    if (currentItem == count - 1) {
+                        nextItem = 0;
+                    } else {
+                        nextItem = currentItem + 1;
+                    }
+
+                    switcher.addClass('in');
+
+                    switcher.find('[data-oid="' + currentItem + '"]').removeClass('active');
+                    switcher.find('[data-oid="' + nextItem + '"]').addClass('active');
+
+                    switcher.width(switcher.find('[data-oid="' + nextItem + '"]').attr('data-width'));
+                    setTimeout(doChange, delay);
+                }
+
+                setTimeout(doChange, delay);
+
+            });
+
+    </script>
+<!-- Animacion con scroll -->
+	    <script language="Javascript" type="text/javascript" src="js/aniCroll.js"></script>
+	    <script language="Javascript" type="text/javascript" src="js/aniCroll.noeasing.js"></script>
+
+
+</head>
+<body>
+	<!-- Start Menu -->
+	<div class="header_bg">
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<div class="rotarY" align="center">
+						<a href="#"><img src="imagen/logo2.png" alt=""></a>
+					</div>	
+					<br />
+		
+		            <div class="wrapper hero-words" >
+		                <h1>
+		                    Leonard  
+		                    <span id="hero-word-switcher" class="in">
+		                        <strong class="active" data-oid="0" data-width="116">Cuenca</strong>
+		                        <strong data-oid="1" data-width="84" class="">Analyze</strong>
+		                        <strong data-oid="2" data-width="100" class="">Testing</strong>
+		                        <strong data-oid="3" data-width="300" class="">Design</strong>
+		                        <strong data-oid="4" data-width="500" class="">Evaluate</strong>
+		                        <strong data-oid="5" data-width="600" class="">Encode</strong>
+				                <strong data-oid="6" data-width="700" class="">Innovate</strong>
+				                <strong data-oid="7" data-width="700" class="">Learn</strong>
+				                <strong data-oid="8" data-width="700" class="">Teach</strong>
+				                <strong data-oid="8" data-width="700" class="">Crypto</strong>
+		                    </span>
+		                </h1>		              
+		            </div>
+					
+				</div>
+				<div class="h_menu">
+				<a id="touch-menu" class="mobile-menu" href="#">Menu</a>
+				<nav>
+					<ul class="menu list-unstyled">
+						<li class=""><a href="index.html">Profile</a></li>
+						<li class="activate"><a href="#">Knowledge</a>
+							<ul class="sub-menu list-unstyled">
+								<li><a href="back.html">Back-End</a></li>
+								<li><a href="front.html">Front-End</a></li>
+								<li><a href="gestion.html">Project Management</a></li>
+								<li><a href="block.html">Blockchain</a></li>
+							</ul>
+						</li>
+						<li class=""><a href="experiencia.html">Experience</a></li>
+						<li class=""><a href="desarrollo.html">Developing</a></li>
+						<li class=""><a href="contactame.html">Contact</a></li>
+						
+					</ul>
+				</nav>
+				<script src="js/menu.js" type="text/javascript"></script>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- End Menu -->
+
+<!-- start Titulo -->
+	<div class="main_bg">
+		<div class="container">
+			<div class="main_grid1">
+				<h3 class="style pull-left">Blockchain</h3>
+				<ol class="breadcrumb pull-right">
+				  <li><a href="index.html">Profile</a></li>
+				  <li class="active">Knowledge</li>
+				</ol>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- end Titulo -->
+	<!-- start Animacion de Lenguajes y Herramientas-->
+
+<div class="main_btm1">
+	<div class="container">
+		<div class="portfolio_main">
+			<br />
+			<!-- start Studies -Parte 1 -->
+			<div class="top_grid"> <div class="col-md-10 span1_of_1"> <span class="active"><i class="fa fa-mortar-board fa-4x"></i></span> <h3>Informatics Engineer.</h3> <p>Degree in Computer Science Engineering,  National Training Plan Project, Adress: Av Urdaneta with Esquina Mijares, Caracas, Venezuela, Francisco de Miranda University College, Year 2013-2014. Cohort 0010. <br /> <strong>web: http://www.cufm.tec.ve </strong> </p> </div> <div class="col-md-2 span1_of_2"> <a href="https://cufm.terna.net/" class="btn">Read More...</a> </div> <div class="clearfix"></div> </div>
+			<!-- end Studies Parte 1 -->
+			<br />
+			<!-- start Studies -Parte 2 -->
+			<div class="top_grid"> <div class="col-md-10 span1_of_1"> <span class="active"><i class="fa fa-mortar-board fa-4x"></i></span> <h3>Computing's tech.</h3> <p>Title of Superior Technician in Computer Science mention administration and data security, Av Urdaneta con Esquina Mijares, Caracas, Venezuela, Francisco de Miranda University College, Year 2006-2009. Cohort 61. <br /> <strong>web: http://www.cufm.tec.ve </strong> </p> </div> <div class="col-md-2 span1_of_2"> <a href="https://cufm.terna.net/" class="btn">Read More...</a> </div> <div class="clearfix"></div> </div>
+			<!-- end Studies Parte 2 -->
+			</br>		
+				
+			<ul class="clearfix" id="filters">
+				<li>
+					<span data-filter="app card" class="filter active">All</span>
+				</li>
+				<li>
+					<span data-filter="app" class="filter">Languages</span>
+				</li>
+				<li>
+					<span data-filter="card" class="filter">Knowledge</span>
+				</li>
+			</ul>
+			<div id="portfoliolist">
+				
+				
+				<div data-cat="card" class="portfolio card mix_all">
+					<div class="portfolio-wrapper">
+							<div class="card" style="width: 18rem;">
+							  <img class="img-responsive" alt="" src="imagen/blockchain/historiaCrypto.png">
+							  <div class="card-body">
+								<h5 class="card-title">Bitcoin History Cryptocurrencies</h5>
+								<p class="card-text">a brief summary of how this technology started back in 2006.</p>
+								<a href="https://github.com/LeoSan/CursoBitcoinyCripto/blob/main/Basico/01_AudiocursoHistoriaBitcoinCriptomonedas/Examen/2021_Diploma-historia-bitcoin_Platzi.pdf" class="btn btn-primary" target="_blank">Read More ...</a>
+							  </div>
+							</div>
+					</div>
+				</div>					
+				
+				<div data-cat="card" class="portfolio card mix_all">
+					<div class="portfolio-wrapper">
+							<div class="card" style="width: 18rem;">
+							  <img class="img-responsive" alt="" src="imagen/blockchain/economiadigital.png">
+							  <div class="card-body">
+								<h5 class="card-title">Digital Economy 	Bitcoin Cryptocurrencies</h5>
+								<p class="card-text">A brief summary of how this technology started back in 2006.</p>
+								<a href="https://github.com/LeoSan/CursoBitcoinyCripto/blob/main/Basico/02_CursoEconomiaDigitalBitcoinCriptomonedas/CursoHistoriaBit.md" class="btn btn-primary" target="_blank">Read More ...</a>
+							  </div>
+							</div>
+					</div>
+				</div>	
+
+			
+					
+		</div>
+	</div>
+</div>
+<!-- start footer -->
+	<div class="footer_bg">
+	<div class="container">
+		<div class="footer">
+			<div class="col-md-4 footer1_of_3">
+				<div class="f_logo">
+					<a href="index.html">
+						<img src="imagen/logo.png" alt=""></a>
+				</div>	
+				
+		        <div class="copyright">
+					<p>Development  2015&nbsp;-&nbsp;2023, All Rights Reserved.©</p>
+					</div>
+			
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	</div>
+	<!-- ends footer -->
+
+</body>
+</html>
