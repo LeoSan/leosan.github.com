@@ -1520,7 +1520,10 @@ h3.style{
 .play{
 	width: 400px;
 	height: 400px;
+}
 
+.response-h{
+	height: 500px !important;
 }
 
 /* Efecto bombillo */
