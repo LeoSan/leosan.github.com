@@ -1,0 +1,32 @@
+Options -Indexes
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http://venezuelageeks.com.ve/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://venezuelageeks.com.ve$    [NC]
+RewriteCond %{HTTP_REFERER} !^http://venezuelageeks.com.ve/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://venezuelageeks.com.ve$    [NC]
+
+#Spammers
+RewriteCond %{REMOTE_HOST} 12.226.240.248 [OR]
+RewriteCond %{REMOTE_HOST} 24.111.102.26 [OR]
+RewriteCond %{REMOTE_HOST} 24.117.121.113 [OR]
+RewriteCond %{REMOTE_HOST} 65.30.216.140 [OR]
+RewriteCond %{REMOTE_HOST} 67.87.64.23 [OR]
+#Abusivos
+RewriteCond %{HTTP_USER_AGENT} ^BlackWidow [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Bolt 0 [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} CazoodleBot [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ChinaClaw [NC,OR]
+RewriteRule ^.* - [F,L]
+#Bloquear bot abusivos por IP
+order allow,deny
+allow from all
+deny from 8.21.4.254
+deny from 65.160.238.176/28
+deny from 85.92.222.0/24
+deny from 206.51.36.0/22
+deny from 216.52.23.0/24
+
+<files index.html>
+order allow,deny
+deny from all
+</files>

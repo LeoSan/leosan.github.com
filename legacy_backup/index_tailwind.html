@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Leonard Cuenca | e-portafolio </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				container: {
+					center: true,
+					padding: '1rem',
+					screens: {
+						sm: '100%',
+						md: '100%',
+						lg: '1170px',
+						xl: '1170px',
+						'2xl': '1170px',
+					},
+				}
+			}
+		}
+	</script>
+
+	<!-- Estilos Adicionales Heredados -->
+	<link href="css/blue.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/hero_word.css" rel="stylesheet" type="text/css" media="all">
+
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap_002.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+	<!--start slider -->
+	<link rel="stylesheet" href="css/fwslider.css" media="all">
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+	<script src="js/fwslider.js"></script>
+	<!--end slider -->
+
+	<!-- JS ESTUDIOS  -->
+	<script type="text/javascript" src="js/jquery_004.js"></script>
+	<script type="text/javascript" src="js/jquery_003.js"></script>
+	<script type="text/javascript" src="js/jquery_002.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			var filterList = {
+
+				init: function () {
+
+					// MixItUp plugin
+					// http://mixitup.io
+					$('#portfoliolist').mixitup({
+						targetSelector: '.portfolio',
+						filterSelector: '.filter',
+						effects: ['fade'],
+						easing: 'snap',
+						// call the hover effect
+						onMixEnd: filterList.hoverEffect()
+					});
+
+				},
+
+				hoverEffect: function () {
+
+					// Simple parallax effect
+					$('#portfoliolist .portfolio').hover(function () {
+						$(this).find('.label').stop().animate({
+							bottom: 0
+						}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({
+							top: -30
+						}, 500, 'easeOutQuad');
+					}, function () {
+						$(this).find('.label').stop().animate({
+							bottom: -40
+						}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({
+							top: 0
+						}, 300, 'easeOutQuad');
+					});
+
+				}
+			};
+
+			// Run the show!
+			filterList.init();
+
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.css" media="screen">
+	<!-- JS ESTUDIOS  -->
+
+	<!--start Codigo Google Analisis -->
+	<script type="text/javascript">
+		$(function () {
+
+			// Hero word switcher
+
+			var switcher = $('#hero-word-switcher');
+			var delay = 2000;
+			var count = switcher.find('strong').length;
+
+			function calculateWidths() {
+				switcher.find('strong').each(function (index) {
+					$(this).attr('data-width', $(this).width());
+				});
+				switcher.width(switcher.find('.active').attr('data-width'));
+			}
+			calculateWidths();
+
+			$(window).resize(function () {
+				calculateWidths();
+			});
+
+			function doChange() {
+				var nextItem;
+				var currentItem = parseInt(switcher.find('.active').attr('data-oid'));
+
+				if (currentItem == count - 1) {
+					nextItem = 0;
+				} else {
+					nextItem = currentItem + 1;
+				}
+
+				switcher.addClass('in');
+
+				switcher.find('[data-oid="' + currentItem + '"]').removeClass('active');
+				switcher.find('[data-oid="' + nextItem + '"]').addClass('active');
+
+				switcher.width(switcher.find('[data-oid="' + nextItem + '"]').attr('data-width'));
+				setTimeout(doChange, delay);
+			}
+
+			setTimeout(doChange, delay);
+
+		});
+
+	</script>
+	<!-- Animacion con scroll -->
+	<script language="Javascript" type="text/javascript" src="js/aniCroll.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/aniCroll.noeasing.js"></script>
+</head>
+
+<body>
+	<!-- Start Menu -->
+	<div class="header_bg">
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<div class="rotarY">
+						<a href="#"><img src="imagen/logo2.png" alt=""></a>
+					</div>
+					<br />
+
+					<div class="wrapper hero-words">
+						<h1>
+							Leonard
+							<span id="hero-word-switcher" class="in">
+								<strong class="active" data-oid="0" data-width="116">Cuenca</strong>
+								<strong data-oid="1" data-width="84" class="">Analyze</strong>
+								<strong data-oid="2" data-width="100" class="">Testing</strong>
+								<strong data-oid="3" data-width="300" class="">Design</strong>
+								<strong data-oid="4" data-width="500" class="">Evaluate</strong>
+								<strong data-oid="5" data-width="600" class="">Encode</strong>
+								<strong data-oid="6" data-width="700" class="">Innovate</strong>
+								<strong data-oid="7" data-width="800" class="">Learn</strong>
+								<strong data-oid="8" data-width="900" class="">Teach</strong>
+								<strong data-oid="9" data-width="1000" class="">Crypto</strong>
+							</span>
+						</h1>
+					</div>
+				</div>
+				<div class="h_menu">
+					<a id="touch-menu" class="mobile-menu" href="#">Profile</a>
+					<nav>
+						<ul class="menu list-unstyled">
+							<li class="activate"><a href="index.html">Profile</a></li>
+							<li class=""><a href="#">Knowledge</a>
+								<ul class="sub-menu list-unstyled">
+									<li><a href="back.html">Back-End</a></li>
+									<li><a href="front.html">Front-End</a></li>
+									<li><a href="gestion.html">Project Management</a></li>
+									<li><a href="block.html">Blockchain</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="experiencia.html">Experience</a></li>
+							<li class=""><a href="desarrollo.html">Developing</a></li>
+							<li class=""><a href="contactame.html">Contact</a></li>
+
+						</ul>
+					</nav>
+					<script src="js/menu.js" type="text/javascript"></script>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- End Menu -->
+
+	<!-- start slider -->
+	<div id="fwslider">
+		<div class="slider_container">
+			<div class="slide">
+				<!-- Slide image -->
+				<img src="imagen/slider_1.png">
+				<!-- /Slide image -->
+				<!-- Texts container -->
+				<div class="slide_content">
+					<div class="slide_content_wrap_2">
+						<!-- Text title -->
+						<h4 class="title">"Change is the end result of all true learning." Leo Buscaglia. </h4>
+						<!-- /Text title -->
+
+					</div>
+				</div>
+				<!-- /Texts container -->
+			</div>
+			<!-- /Duplicate to create more slides -->
+			<div class="slide">
+				<img src="imagen/slider_2.png">
+				<div class="slide_content">
+					<div class="slide_content_wrap">
+						<h4 class="title">If you fall seven times, get up eight.</h4>
+						<p class="description" style="font-size:20px">.</p>
+					</div>
+				</div>
+			</div>
+			<!--/slide -->
+
+			<!-- /Duplicate to create more slides -->
+			<div class="slide">
+
+				<video autoplay="autoplay" muted="muted" loop="loop" class="video-head img-responsive"
+					onended="this.play()" poster="imagen/bg_video2.mp4">
+					<source src="imagen/bg_video2.mp4" type="video/webm">
+				</video>
+
+				<div class="slide_content">
+					<div class="slide_content_wrap">
+						<h4 class="title">Change is the end result of all true learning.</h4>
+
+					</div>
+				</div>
+			</div>
+			<!--/slide -->
+
+			<!-- /Duplicate to create more slides -->
+			<div class="slide">
+				<video autoplay="autoplay" muted="muted" loop="loop" class="video-head img-responsive"
+					onended="this.play()" poster="imagen/slider_3.jpg">
+					<source src="imagen/slider_3.webm" type="video/webm">
+				</video>
+				<div class="slide_content">
+					<div class="slide_content_wrap">
+						<p class="description">The Greatness. It's a lot of little things done right.</p>
+					</div>
+				</div>
+			</div>
+			<!--/slide -->
+
+
+		</div>
+		<div class="timers">
+			<div class="timer">
+				<div class="progress">
+				</div>
+			</div>
+			<div class="timer">
+				<div class="progress">
+				</div>
+			</div>
+		</div>
+		<div class="slideNext">
+			<span> </span> <!-- ATRAS -->
+		</div>
+		<div class="slidePrev">
+			<span> </span> <!-- SIGUIENTE -->
+		</div>
+	</div>
+	<!-- End slider -->
+	<!--start Contenedor -->
+	<div class="container">
+		<div class="main_grid">
+			<!-- start top_grid -->
+			<div class="top_grid grid grid-cols-1 md:grid-cols-12 gap-6 items-center my-12">
+				<div class="md:col-span-2 flex justify-center text-blue-500">
+					<span class="active"><i class="even fa fa-lightbulb-o fa-5x"></i></span>
+				</div>
+				<div class="md:col-span-10 text-center md:text-left">
+					<h3 class="evenLetter text-2xl font-light text-gray-600">Young entrepreneur, web media and
+						infrastructure builder, enthusiastic, free innovator, looking for new goals and working to
+						achieve them.</h3>
+				</div>
+			</div>
+			<!-- end top_grid -->
+
+			<!-- start span_of_4 -->
+			<div class="span_of_4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+				<div class="text-center">
+					<div class="span4_of_list flex flex-col items-center h-full">
+						<img class="img-responsive rotarY mx-auto max-w-full h-auto" alt="Yo" src="imagen/yo_2023.png">
+						<div class="read_more mt-6">
+							<a href="./cv_doc/Ing_Leonard_Cuenca_Roa_CV.pdf" target="_blank"
+								class="btn btn-2 font-semibold border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 transition-colors duration-300 block uppercase text-sm tracking-wider">Read
+								more...</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-center">
+					<div class="span4_of_list flex flex-col items-center h-full">
+						<span
+							class="w-16 h-16 rounded-full bg-blue-50 text-blue-400 flex items-center justify-center mb-4 text-2xl transition hover:bg-blue-400 hover:text-white"><i
+								class="fa fa-rocket"></i></span>
+						<h3 class="text-lg font-bold mb-3 uppercase text-gray-800">To play</h3>
+						<p class="text-gray-500 mb-6 font-light leading-relaxed flex-grow">The fun of creating is
+							innovating when you enjoy your work, knowing that we feel good about ourselves, everything
+							is fine. linked to our self-esteem.</p>
+						<div class="read_more mt-auto">
+							<a href="https://github.com/LeoSan"
+								class="btn btn-2b bg-gray-800 text-white hover:bg-blue-500 px-6 py-2 transition-colors duration-300 font-semibold uppercase text-sm tracking-wider block">Leer
+								Mas</a>
+						</div>
+					</div>
+				</div>
+				<div class="text-center">
+					<div class="span4_of_list flex flex-col items-center h-full">
+						<span
+							class="w-16 h-16 rounded-full bg-blue-50 text-blue-400 flex items-center justify-center mb-4 text-2xl transition hover:bg-blue-400 hover:text-white"><i
+								class="fa fa-flag"></i></span>
+						<h3 class="text-lg font-bold mb-3 uppercase text-gray-800">To learn</h3>
+						<p class="text-gray-500 mb-6 font-light leading-relaxed flex-grow">The best way to tackle
+							challenges is to grab your best tools and start a hands-on project. Since the best way to
+							learn is by doing.</p>
+						<div class="read_more mt-auto">
+							<a href="https://github.com/LeoSan"
+								class="btn btn-2b bg-gray-800 text-white hover:bg-blue-500 px-6 py-2 transition-colors duration-300 font-semibold uppercase text-sm tracking-wider block">Leer
+								Mas</a>
+						</div>
+					</div>
+				</div>
+				<div class="text-center">
+					<div class="span4_of_list flex flex-col items-center h-full">
+						<span
+							class="w-16 h-16 rounded-full bg-blue-50 text-blue-400 flex items-center justify-center mb-4 text-2xl transition hover:bg-blue-400 hover:text-white"><i
+								class="fa fa-flask"></i></span>
+						<h3 class="text-lg font-bold mb-3 uppercase text-gray-800">To teach</h3>
+						<p class="text-gray-500 mb-6 font-light leading-relaxed flex-grow">Teach others the best way to
+							give back and strengthen our skills and knowledge. Let's pronounce the mantra Let's do good
+							without looking at who!!!</p>
+						<div class="read_more mt-auto">
+							<a href="https://github.com/LeoSan"
+								class="btn btn-2b bg-gray-800 text-white hover:bg-blue-500 px-6 py-2 transition-colors duration-300 font-semibold uppercase text-sm tracking-wider block">Leer
+								Mas</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end span_of_4 -->
+
+		</div>
+	</div>
+	<!--End Contenedor -->
+	<section class="">
+		<div class="parallax">
+			<div class="parallax-break break-lg">
+				<div class="parallax-capture">
+					Martha Beck, The “yes” is the emotion or inspiration that drives you to follow what you are
+					passionate about; The "but" is the intrusion of fear that prevents you from doing it.
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+	</section>
+
+
+	<div class="main_btm">
+		<div class="container">
+
+			<div class="w-full text-center">
+
+				<div class="clients" style="background:#ecf0f1">
+
+					<iframe width="700" height="500"
+						class="w-full max-w-[700px] h-[300px] md:h-[500px] mx-auto border-0"
+						src="https://www.youtube.com/embed/uU85zi3htlg?&autoplay=0">
+					</iframe>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start footer -->
+	<div class="footer_bg bg-gray-900 text-white py-12">
+		<div class="container">
+			<div class="footer flex flex-col md:flex-row items-center md:items-start justify-between">
+				<div class="w-full md:w-1/3 mb-8 md:mb-0 text-center md:text-left">
+					<div class="f_logo mb-4">
+						<a href="index.html">
+							<img src="imagen/logo.png" alt="" class="mx-auto md:mx-0"></a>
+					</div>
+
+					<div class="copyright text-gray-400 text-sm">
+						<p>Development 2015&nbsp;-&nbsp;2023, All Rights Reserved.©</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ends footer -->
+
+</body>
+
+</html>

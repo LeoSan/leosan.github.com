@@ -1,0 +1,74 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Portafolio">
+	
+	<title>jQuery Timeline 0.9.54 - Dando vida al tiempo</title>
+	<link rel="stylesheet" href="css/style.css" media="screen" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/jquery.timelinr-0.9.54.js"></script>
+	
+	<script>
+		$(function(){
+			$().timelinr({
+				arrowKeys: 'true'
+			})
+		});
+	</script>
+</head>
+
+<body>
+	
+	<div id="timeline">
+		<ul id="dates">
+			<li><a href="#2008">2008</a></li>
+			<li><a href="#2009">2009</a></li>
+			<li><a href="#2010">2010</a></li>
+			<li><a href="#2012">2012</a></li>
+			<li><a href="#2013">2013</a></li>
+			<li><a href="#2014">2014</a></li>
+		</ul>
+		<ul id="issues">
+			<li id="2008">
+				<img src="images/1.png" width="256" height="256" />
+				<h1>2008</h1>
+				<p>Trabaje en Mv Internacional, Como Soporte</p>
+			</li>
+			<li id="2009">
+				<img src="images/2.png" width="256" height="256" />
+				<h1>2009</h1>
+				<p></p>
+			</li>
+			<li id="2010">
+				<img src="images/3.png" width="256" height="256" />
+				<h1>2010</h1>
+				<p>Trabaje en Trade Solution como programador Jr</p>
+			</li>
+			<li id="2012">
+				<img src="images/4.png" width="256" height="256" />
+				<h1>2012</h1>
+				<p>Trabaje en Meysys e Ingenieria Como Programador Jr</p>
+			</li>
+			<li id="2013">
+				<img src="images/5.png" width="256" height="256" />
+				<h1>2013</h1>
+				<p>Trabaje Freelance 4geek Como Maquetador Jr</p>
+			</li>
+			<li id="2014">
+				<img src="images/6.png" width="256" height="256" />
+				<h1>2014</h1>
+				<p>Actual en Consultores Micorp Como Programador Semi-Senior</p>
+			</li>
+			
+		</ul>
+		<div id="grad_left"></div>
+		<div id="grad_right"></div>
+		<a href="#" id="next">+</a>
+		<a href="#" id="prev">-</a>
+	</div>
+
+
+</body>
+</html>

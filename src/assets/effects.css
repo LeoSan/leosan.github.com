@@ -1,0 +1,236 @@
+/*
+ * assets/effects.css
+ * Migra aquí tus animaciones, transiciones y efectos complejos heredados
+ * para que Tailwind se encargue de empaquetarlos al resto de tu aplicación.
+ */
+
+/* start Efecto Logo */
+.rotarY {
+	transform: rotateY(0deg);
+	transition-duration: 2s;
+	-webkit-transform: rotateY(0deg);
+	-webkit-transition-duration: 2s;
+}
+
+.rotarY:hover {
+	transform: rotateY(180deg);
+	transition-duration: 2s;
+	-webkit-transform: rotateY(180deg);
+	-webkit-transition-duration: 2s;
+}
+
+/* start h_menu */
+.h_menu {
+	float: right;
+	margin-top: 30px;
+}
+
+nav {
+	display: block;
+}
+
+.menu {
+	display: block;
+}
+
+.menu li {
+	display: inline-block;
+	position: relative;
+	z-index: 100;
+}
+
+.menu li:first-child {
+	margin-left: 0;
+}
+
+.menu li.activate a,
+.menu li a:hover {
+	background: #62A29E;
+	box-shadow: inset 0px -4px 0px #47817E;
+	-webkit-box-shadow: inset 0px -4px 0px #47817E;
+	-moz-box-shadow: inset 0px -4px 0px #47817E;
+	-o-box-shadow: inset 0px -4px 0px #47817E;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+.menu li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 10px 24px;
+	display: block;
+	color: #ffffff;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover,
+.menu li:hover>a {
+	color: #ffffff;
+	background: #62A29E;
+}
+
+.menu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 132px;
+	position: absolute;
+	top: 42px;
+	left: 0px;
+	background: #ffffff;
+}
+
+.menu ul li {
+	display: block;
+	float: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li a {
+	font-size: 13px;
+	font-weight: normal;
+	display: block;
+	color: #ffffff;
+	border-left: 3px solid #C03C35;
+	background: #E2534B;
+	padding: 10px 20px;
+}
+
+.menu ul li a:hover,
+.menu ul li:hover>a {
+	background: #f0f0f0;
+	border-left: 3px solid #62A29E;
+	color: #797979;
+	box-shadow: none;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+}
+
+.menu li:hover>ul {
+	display: block;
+}
+
+.menu ul ul {
+	left: 132px;
+	top: 0px;
+}
+
+.mobile-menu {
+	display: none;
+	width: 100%;
+	padding: 12px;
+	background: #528B86;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.mobile-menu:hover {
+	background: #447F7A;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.mainWrap {
+		width: 768px;
+	}
+
+	.menu ul {
+		top: 37px;
+	}
+
+	.menu li a {
+		font-size: 12px;
+		padding: 8px;
+	}
+}
+
+@media (max-width: 767px) {
+	.mainWrap {
+		width: auto;
+		padding: 50px 20px;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.mobile-menu {
+		display: block;
+		margin-top: 20px;
+	}
+
+	nav {
+		margin: 0;
+		background: none;
+	}
+
+	.menu li {
+		display: block;
+		margin: 0;
+	}
+
+	.menu li a {
+		background: #ffffff;
+		color: #797979;
+		border-top: 1px solid #e0e0e0;
+	}
+
+	.menu li a:hover,
+	.menu li:hover>a {
+		background: #f0f0f0;
+		color: #797979;
+	}
+
+	.menu ul {
+		display: none;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.menu ul ul {
+		left: 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+
+	.h_menu {
+		float: none;
+	}
+
+	.menu li.activate a,
+	.menu li a:hover {
+		background: #ffffff;
+		box-shadow: none;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		-o-border-radius: 0px;
+	}
+
+	.menu li a:hover {
+		color: #ffffff;
+		background: #E2534B;
+	}
+
+	.menu li a {
+		font-size: 14px;
+	}
+
+}
