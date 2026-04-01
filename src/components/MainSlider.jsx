@@ -48,7 +48,7 @@ export default function MainSlider() {
         {/* Slide 2 - Image */}
         <SwiperSlide>
           <div className="relative w-full h-full">
-            <img src="/imagen/slider_2.png" alt="Slider 2" className="w-full h-full object-cover" />
+            <img src="/imagen/slider_4.png" alt="Slider 4" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/50 z-0"></div>
             <div className="absolute inset-0 flex items-center justify-center z-10">
               <h2 className="text-white text-3xl md:text-5xl font-bold p-4 text-center drop-shadow-lg">

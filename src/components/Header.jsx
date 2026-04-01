@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const words = [
   'Cuenca', 'Architect', 'Develop', 'Analyze Data', 'Model',
@@ -21,9 +22,9 @@ export default function Header() {
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between">
         <div className="flex flex-col items-center text-white mb-6 md:mb-0">
           <div className="rotarY">
-            <a href="/">
-              <img src="/imagen/logo2.png" alt="Logo" className="w-24 md:w-32" />
-            </a>
+            <Link to="/">
+              <img src="/imagen/logo3.png" alt="Logo" className="w-24 md:w-32" />
+            </Link>
           </div>
           <div className="mt-4 text-3xl md:text-5xl font-bold flex items-center gap-3">
             <span>Leonard</span>
@@ -37,13 +38,13 @@ export default function Header() {
 
 
         <div className="h_menu">
-          <a id="touch-menu" className="mobile-menu" href="#">Profile</a>
+          <Link id="touch-menu" className="mobile-menu" to="/">Profile</Link>
           <nav>
             <ul className="menu">
-              <li className="activate"><a href="index.html">Profile</a></li>
+              <li className="activate"><Link to="/">Profile</Link></li>
               <li className=""><a href="#">Knowledge</a>
                 <ul className="sub-menu">
-                  <li><a href="back.html">Back-End</a></li>
+                  <li><Link to="/back">Back-End</Link></li>
                   <li><a href="front.html">Front-End</a></li>
                   <li><a href="gestion.html">Project Management</a></li>
                   <li><a href="block.html">Blockchain</a></li>

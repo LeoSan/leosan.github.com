@@ -234,3 +234,305 @@ nav {
 	}
 
 }
+
+/* Efecto Fixed Parallax  */
+
+.parallax {
+	margin: 0px 0px 80px 0px;
+	padding: 0;
+}
+
+.parallax-break {
+	box-shadow: inset 0 0 1em #111;
+	background-image: url('../imagen/teclado.jpg');
+}
+
+.break-lg {
+	position: relative;
+	height: 50vh;
+	text-indent: -9999px;
+	background-attachment: fixed;
+	background-position: top center;
+	background-size: cover;
+}
+
+.parallax-capture {
+	float: right;
+	width: 90%;
+	padding: 1em;
+	margin: -1.5em 1em 0 0;
+	text-indent: 0;
+	background: #47817E;
+	box-shadow: 0 1px 0.125em #333;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: justify;
+	opacity: 0.5;
+}
+
+.parallax-capture:hover {
+	opacity: 1;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+/* start services */
+.main_btm1 {
+	background: #ffffff;
+}
+
+.main_btm2 {
+	background: #f0f0f0;
+}
+
+.clients1 p {
+	font-size: 14px;
+	color: #888888;
+	line-height: 1.8em;
+}
+
+/* start pricing2 */
+.pricing2 {
+	margin: 4% 0;
+	text-align: center;
+}
+
+.pricing2 h5 {
+	text-transform: uppercase;
+	color: #62A09D;
+	font-size: 34px;
+	margin-bottom: 2%;
+	font-weight: 600;
+}
+
+.pricing2 h6 {
+	font-size: 16px;
+	color: #888888;
+	line-height: 1.8em;
+	margin: 0;
+}
+
+.pricing_table {
+	line-height: 150%;
+	margin: 4% auto;
+	width: 100%;
+}
+
+.price_block {
+	cursor: pointer;
+	text-align: center;
+	width: 25% !important;
+	color: #fff;
+	float: left;
+	list-style-type: none;
+	position: relative;
+	box-sizing: border-box;
+	border-bottom: 1px solid transparent;
+	transition: 0.3s all;
+	-webkit-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+	-o-transition: 0.3s all;
+}
+
+/*Price heads*/
+.pricing_table h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 15px 0;
+	background: #333;
+	margin: -10px 0 1px 0;
+}
+
+/*Price tags*/
+.price {
+	background: #62A29E;
+	display: table;
+	width: 100%;
+	height: 80px;
+}
+
+.price_figure {
+	font-size: 24px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.price_number {
+	font-size: 1.5em;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.price_tenure {
+	font-size: 12px;
+}
+
+/*---start portfolio --*/
+.portfolio_main {
+	padding: 2% 0 4%;
+}
+
+#info {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	background: #fcf8e3;
+	border: 1px solid #fbeed5;
+	width: 95%;
+	max-width: 900px;
+	margin: 0 auto 40px auto;
+	font-size: 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+#info .info-wrapper {
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+#info a {
+	color: #c09853;
+	text-decoration: none;
+}
+
+#info p {
+	margin: 5px 0 0 0;
+}
+
+.container {
+	position: relative;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+#filters {
+	margin: 4% 1%;
+	padding: 0;
+	list-style: none;
+}
+
+#filters li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#filters li span {
+	font-size: 13px;
+	display: block;
+	padding: 10px 30px;
+	border: 1px solid rgb(221, 221, 221);
+	text-decoration: none;
+	color: #47817E;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+#filters li span.active,
+#filters li span:hover {
+	background: #EA6060;
+	border: 1px solid #CF5050;
+	color: #fff;
+}
+
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	margin: 1%;
+	/* display: none; */
+	overflow: hidden;
+}
+
+.portfolio-wrapper {
+	overflow: hidden;
+	position: relative !important;
+	cursor: pointer;
+}
+
+.portfolio img {
+	top: 0px !important;
+	max-width: 100%;
+	position: relative;
+	opacity: 5;
+	transition: all 300ms !important;
+	-webkit-transition: all 300ms !important;
+	-moz-transition: all 300ms !important;
+}
+
+.portfolio .card-body {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 1.25rem;
+}
+
+.portfolio .label {
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	bottom: -40px;
+}
+
+.portfolio .label-bg {
+	background: #62A29E;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.portfolio .label-text {
+	color: #fff;
+	position: relative;
+	z-index: 500;
+	padding: 5px 8px;
+}
+
+.portfolio .text-category {
+	display: block;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 100;
+	margin-top: 5px;
+}
+
+.portfolio .card-title {
+	font-size: 20px;
+	font-weight: 400;
+	color: #47817E;
+	text-align: center;
+}
+
+.portfolio .card-text {
+	font-size: 12px;
+	text-align: justify;
+}
+
+.img-responsive,
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

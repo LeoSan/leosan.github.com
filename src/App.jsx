@@ -1,19 +1,23 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import MainSlider from './components/MainSlider';
-import MainGrid from './components/MainGrid';
-import ParallaxSection from './components/ParallaxSection';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Back from './pages/Back';
 
 function App() {
   return (
-    <div className="font-sans antialiased text-neutral-700 bg-neutral-100 min-h-screen">
-      <Header />
-      <MainSlider />
-      {/*  <MainGrid />
-      <ParallaxSection /> 
-      <Footer />*/}
-    </div>
+    <Router>
+      <div className="font-sans antialiased text-neutral-700 bg-neutral-100 min-h-screen">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/back" element={<Back />} />
+          <Route path="/back.html" element={<Back />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

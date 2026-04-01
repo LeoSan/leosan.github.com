@@ -5,7 +5,7 @@ export default function MainGrid() {
   return (
     <section className="bg-neutral-100 py-10 md:py-16">
       <div className="container mx-auto px-4">
-        
+
         {/* Top Grid */}
         <div className="bg-neutral-200 p-8 rounded-lg flex flex-col md:flex-row items-center gap-8 mb-12 shadow-sm relative overflow-hidden">
           <div className="text-primary-light bg-white p-6 rounded-full shadow-inner">
@@ -20,14 +20,14 @@ export default function MainGrid() {
 
         {/* 4 Span Grids */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
+
           {/* Profile/CV Card */}
           <div className="bg-white rounded p-6 shadow-[inset_0px_-1px_1px_rgb(216,216,216)] hover:-translate-y-2 transition-transform duration-300 relative group text-center flex flex-col items-center">
-            <div className="overflow-hidden rounded-full w-32 h-32 mb-4 mt-4 shadow-lg">
-              <img src="/imagen/yo_2023.png" alt="Profile" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+            <div className="overflow-hidden rounded-full w-40 h-40 mb-4 mt-4 shadow-lg">
+              <img src="/imagen/yo_2023.png" alt="Profile" className="w-full h-full rotarY" />
             </div>
             <div className="absolute -bottom-5">
-              <a href="/legacy_backup/cv_doc/CV_2026_Espaniol.pdf" target="_blank" rel="noreferrer" className="inline-block px-8 py-3 bg-secondary hover:bg-red-500 text-white shadow-[0_4px_#ab3c3c] font-bold uppercase rounded transition-colors">
+              <a href="../public/cv/CV_2026_English.pdf" target="_blank" rel="noreferrer" className="inline-block px-8 py-3 bg-secondary hover:bg-red-500 text-white shadow-[0_4px_#ab3c3c] font-bold uppercase rounded transition-colors">
                 Read more...
               </a>
             </div>

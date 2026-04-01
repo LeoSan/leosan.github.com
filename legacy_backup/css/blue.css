@@ -1934,7 +1934,7 @@ h3.style {
 
 .parallax-break {
 	box-shadow: inset 0 0 1em #111;
-	background-image: url('../imagen/teclado.jpg');
+	background-image: url('../public/imagen/teclado.jpg');
 }
 
 .break-lg {
