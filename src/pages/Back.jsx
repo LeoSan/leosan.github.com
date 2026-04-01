@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGraduationCap } from 'react-icons/fa';
 import list_cards from '../assets/data/back.js';
-import SkillCard from '../components/ux/SkillCard.jsx';
+import Card from '../components/ux/Card.tsx';
 
 const list_cards_back = list_cards;
 
@@ -89,19 +89,18 @@ export default function Back() {
 
 
 						<ul className="clearfix flex flex-wrap gap-4 mb-8 justify-start border-b pb-4" id="filters">
-							<li><span data-filter="app card" className="filter active px-4 py-2 border border-primary text-primary rounded-full cursor-pointer hover:bg-primary hover:text-white transition-colors">All</span></li>
-							<li><span data-filter="app" className="filter px-4 py-2 border border-gray-300 text-gray-600 rounded-full cursor-pointer hover:bg-primary hover:text-white hover:border-primary transition-colors">Languages</span></li>
-							<li><span data-filter="card" className="filter px-4 py-2 border border-gray-300 text-gray-600 rounded-full cursor-pointer hover:bg-primary hover:text-white hover:border-primary transition-colors">Tools</span></li>
+							<li><span data-filter="leng app ia" className="filter active px-4 py-2 border border-primary text-primary rounded-full cursor-pointer hover:bg-primary hover:text-white transition-colors">All</span></li>
+							<li><span data-filter="leng" className="filter px-4 py-2 border border-gray-300 text-gray-600 rounded-full cursor-pointer hover:bg-primary hover:text-white hover:border-primary transition-colors">Languages</span></li>
+							<li><span data-filter="app" className="filter px-4 py-2 border border-gray-300 text-gray-600 rounded-full cursor-pointer hover:bg-primary hover:text-white hover:border-primary transition-colors">Tools</span></li>
+							<li><span data-filter="ia" className="filter px-4 py-2 border border-gray-300 text-gray-600 rounded-full cursor-pointer hover:bg-primary hover:text-white hover:border-primary transition-colors">IA</span></li>
 						</ul>
 
 						<div id="portfoliolist" className="flex flex-wrap justify-center gap-6">
 
 							{/* Items */}
 							{list_cards_back.map((card, index) => (
-								<SkillCard key={index} card={card} />
+								<Card key={index} card={card} />
 							))}
-
-
 
 						</div>
 

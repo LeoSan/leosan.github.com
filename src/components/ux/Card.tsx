@@ -1,8 +1,15 @@
 import React from 'react';
 
-// Definimos el componente recibiendo la prop 'card'
-const SkillCard = ({ card }) => {
-    // Extraemos (desestructuramos) las propiedades necesarias del objeto card
+interface CardData {
+    tipo: string;
+    titulo: string;
+    texto: string;
+    enlace: string;
+    imagen: string;
+}
+
+const Card = ({ card }: { card: CardData }) => {
+
     const { tipo, titulo, texto, enlace, imagen } = card;
 
     return (
@@ -16,7 +23,7 @@ const SkillCard = ({ card }) => {
                     <img
                         className="img-responsive w-full h-48 object-contain p-4"
                         alt={`Logo de ${titulo}`}
-                        src={`imagen/back/${imagen}.png`}
+                        src={`../public/imagen/back/${imagen}`}
                     />
 
                     <div className="card-body p-5 border-t">
@@ -43,4 +50,4 @@ const SkillCard = ({ card }) => {
     );
 };
 
-export default SkillCard;
+export default Card;
