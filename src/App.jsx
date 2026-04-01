@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Back from './pages/Back';
+import Front from './pages/Front';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/back" element={<Back />} />
-          <Route path="/back.html" element={<Back />} />
+          <Route path="/Front" element={<Front />} />
+
         </Routes>
         <Footer />
       </div>

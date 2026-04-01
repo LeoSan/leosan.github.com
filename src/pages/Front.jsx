@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGraduationCap } from 'react-icons/fa';
-import list_cards from '../data/back.js';
+import list_cards from '../data/front.js';
 import Card from '../components/ux/Card.tsx';
 import Studies from '../components/ux/Studies.tsx';
 
 const list_cards_back = list_cards;
 
-export default function Back() {
+export default function Front() {
 	const [activeFilter, setActiveFilter] = useState('all');
 
 	const filteredCards = list_cards_back.filter(card => {
 		if (activeFilter === 'all') return true;
 		if (activeFilter === 'lenguaje') return card.tipo === 'lenguaje';
 		if (activeFilter === 'app') return card.tipo === 'app';
-		if (activeFilter === 'patrones') return card.tipo === 'patrones';
 		return true;
 	});
 
@@ -23,7 +22,7 @@ export default function Back() {
 			<div className="bg-gray-200 shadow-sm border-b py-4">
 				<div className="container mx-auto px-4">
 					<div className="flex flex-col md:flex-row justify-between items-center">
-						<h3 className="style pull-left text-2xl font-bold uppercase text-primary">backend</h3>
+						<h3 className="style pull-left text-2xl font-bold uppercase text-primary">frotend</h3>
 						<ol className="pull-right flex space-x-2 text-sm text-gray-500">
 							<li>
 								<Link className="hover:text-primary transition-colors" to="/">Profile</Link>
@@ -41,7 +40,6 @@ export default function Back() {
 					<li><span onClick={() => setActiveFilter('all')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'all' ? 'activo' : 'inactivo'}`}>All</span></li>
 					<li><span onClick={() => setActiveFilter('lenguaje')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'lenguaje' ? 'activo' : 'inactivo'}`}>Languages</span></li>
 					<li><span onClick={() => setActiveFilter('app')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'app' ? 'activo' : 'inactivo'}`}>Tools</span></li>
-					<li><span onClick={() => setActiveFilter('patrones')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'patrones' ? 'activo' : 'inactivo'}`}>Patterns</span></li>
 				</ul>
 
 				<div id="portfoliolist" className="flex flex-wrap justify-center gap-6">
