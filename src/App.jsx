@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="font-sans antialiased text-neutral-700 bg-neutral-100 min-h-screen">
       <Header />
-      {/* <MainSlider />
-      <MainGrid />
+      <MainSlider />
+      {/*  <MainGrid />
       <ParallaxSection /> 
       <Footer />*/}
     </div>
