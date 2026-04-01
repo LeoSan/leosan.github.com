@@ -39,8 +39,23 @@ export default function MainSlider() {
             <div className="absolute inset-0 bg-black/50 z-0"></div>
             <div className="absolute inset-0 flex items-center justify-center z-10">
               <h2 className="text-white text-3xl md:text-5xl font-bold p-4 text-center drop-shadow-lg">
-                "Change is the end result of all true learning." <br /> <span className="text-xl md:text-2xl font-light">Leo Buscaglia.</span>
+                "Senior Full Stack Developer with over 10 years of industry experience." <br /> <span className="text-xl md:text-2xl font-light">Back, Front, Analytics.</span>
               </h2>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 2 - Video WebM */}
+        <SwiperSlide>
+          <div className="relative w-full h-full overflow-hidden bg-black">
+            <video autoPlay muted loop playsInline className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover" poster="/imagen/slider_3.jpg">
+              <source src="/imagen/slider_3.webm" type="video/webm" />
+            </video>
+            <div className="absolute inset-0 bg-black/50 z-0"></div>
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <p className="text-white text-2xl md:text-4xl font-light p-4 text-center drop-shadow-lg">
+                As a Senior Backend Developer, I possess deep proficiency in PHP, Python, Java, and C#. I specialize in architecting scalable monolithic and microservices systems, with a proven track record of deploying robust cloud solutions on AWS, Google Cloud, and Azure.
+              </p>
             </div>
           </div>
         </SwiperSlide>
@@ -52,7 +67,7 @@ export default function MainSlider() {
             <div className="absolute inset-0 bg-black/50 z-0"></div>
             <div className="absolute inset-0 flex items-center justify-center z-10">
               <h2 className="text-white text-3xl md:text-5xl font-bold p-4 text-center drop-shadow-lg">
-                If you fall seven times, get up eight.
+                Mastering a programming language goes far beyond writing lines of code; it is the superpower of harnessing technology to deliver real-world solutions.
               </h2>
             </div>
           </div>
@@ -67,23 +82,8 @@ export default function MainSlider() {
             <div className="absolute inset-0 bg-black/50 z-0"></div>
             <div className="absolute inset-0 flex items-center justify-center z-10">
               <h2 className="text-white text-3xl md:text-5xl font-bold p-4 text-center drop-shadow-lg">
-                Change is the end result of all true learning.
+                Software development is 80% reading code and 20% writing it; it is a refined skill that is only mastered through years of experience.
               </h2>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        {/* Slide 4 - Video WebM */}
-        <SwiperSlide>
-          <div className="relative w-full h-full overflow-hidden bg-black">
-            <video autoPlay muted loop playsInline className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover" poster="/imagen/slider_3.jpg">
-              <source src="/imagen/slider_3.webm" type="video/webm" />
-            </video>
-            <div className="absolute inset-0 bg-black/50 z-0"></div>
-            <div className="absolute inset-0 flex items-center justify-center z-10">
-              <p className="text-white text-2xl md:text-4xl font-light p-4 text-center drop-shadow-lg">
-                The Greatness. It's a lot of little things done right.
-              </p>
             </div>
           </div>
         </SwiperSlide>

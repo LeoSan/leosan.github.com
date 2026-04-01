@@ -46,6 +46,7 @@ export default function Header() {
                 <ul className="sub-menu">
                   <li><Link to="/back">Back-End</Link></li>
                   <li><a href="front.html">Front-End</a></li>
+                  <li><a href="front.html">IA & Data Science</a></li>
                   <li><a href="gestion.html">Project Management</a></li>
                   <li><a href="block.html">Blockchain</a></li>
                 </ul>

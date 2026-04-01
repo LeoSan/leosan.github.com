@@ -9,4 +9,15 @@
   body {
     @apply bg-neutral-100 text-neutral-700 font-sans;
   }
+
+  .activo {
+    @apply active border-primary text-primary hover:bg-primary hover:text-white;
+  }
+
+  .inactivo {
+    @apply border-gray-300 text-gray-600 hover:bg-primary hover:text-white hover:border-primary;
+  }
+
+
+
 }
