@@ -5,6 +5,10 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Back from './pages/Back';
 import Front from './pages/Front';
+import IA from './pages/IA';
+import Project from './pages/Project';
+import Block from './pages/Block';
+
 
 function App() {
   return (
@@ -14,8 +18,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/back" element={<Back />} />
-          <Route path="/Front" element={<Front />} />
-
+          <Route path="/front" element={<Front />} />
+          <Route path="/ia" element={<IA />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/block" element={<Block />} />
         </Routes>
         <Footer />
       </div>
