@@ -12,9 +12,8 @@ export default function Project() {
 
 	const filteredCards = list_cards_back.filter(card => {
 		if (activeFilter === 'all') return true;
-		if (activeFilter === 'lenguaje') return card.tipo === 'lenguaje';
+		if (activeFilter === 'tools') return card.tipo === 'tools';
 		if (activeFilter === 'app') return card.tipo === 'app';
-		if (activeFilter === 'patrones') return card.tipo === 'patrones';
 		return true;
 	});
 
@@ -39,18 +38,14 @@ export default function Project() {
 
 				<ul id="filters" className="flex flex-wrap gap-4 justify-start" >
 					<li><span onClick={() => setActiveFilter('all')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'all' ? 'activo' : 'inactivo'}`}>All</span></li>
-					<li><span onClick={() => setActiveFilter('lenguaje')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'lenguaje' ? 'activo' : 'inactivo'}`}>Languages</span></li>
-					<li><span onClick={() => setActiveFilter('app')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'app' ? 'activo' : 'inactivo'}`}>Tools</span></li>
-					<li><span onClick={() => setActiveFilter('patrones')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'patrones' ? 'activo' : 'inactivo'}`}>Patterns</span></li>
+					<li><span onClick={() => setActiveFilter('tools')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'tools' ? 'activo' : 'inactivo'}`}>Tools</span></li>
+					<li><span onClick={() => setActiveFilter('app')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'app' ? 'activo' : 'inactivo'}`}>Apps</span></li>
 				</ul>
 
 				<div id="portfoliolist" className="flex flex-wrap justify-center gap-6">
-
 					{filteredCards.map((card, index) => (
 						<Card key={index} card={card} />
 					))}
-
-
 				</div>
 			</div>
 

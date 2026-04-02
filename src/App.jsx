@@ -8,6 +8,7 @@ import Front from './pages/Front';
 import IA from './pages/IA';
 import Project from './pages/Project';
 import Block from './pages/Block';
+import Courses from './pages/Courses';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/ia" element={<IA />} />
           <Route path="/project" element={<Project />} />
           <Route path="/block" element={<Block />} />
+          <Route path="/courses" element={<Courses />} />
         </Routes>
         <Footer />
       </div>

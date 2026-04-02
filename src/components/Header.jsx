@@ -49,6 +49,7 @@ export default function Header() {
                   <li><Link to="/ia">IA & Data Science</Link></li>
                   <li><Link to="/project">Project Management</Link></li>
                   <li><Link to="/block">Blockchain</Link></li>
+                  <li><Link to="/courses">Courses</Link></li>
                 </ul>
               </li>
               <li ><a href="experiencia.html">Experience</a></li>

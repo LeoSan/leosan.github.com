@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import list_cards from '../data/ia.js';
+import { FaGraduationCap } from 'react-icons/fa';
+import list_cards from '../data/curso.js';
 import Card from '../components/ux/Card.tsx';
 import Studies from '../components/ux/Studies.tsx';
 
-const list_cards_ia = list_cards;
+const list_cards_back = list_cards;
 
-export default function IA() {
+export default function Courses() {
 	const [activeFilter, setActiveFilter] = useState('all');
 
-	const filteredCards = list_cards_ia.filter(card => {
+	const filteredCards = list_cards_back.filter(card => {
 		if (activeFilter === 'all') return true;
-		if (activeFilter === 'lenguaje') return card.tipo === 'lenguaje';
-		if (activeFilter === 'theory') return card.tipo === 'theory';
+		if (activeFilter === 'tools') return card.tipo === 'tools';
+		if (activeFilter === 'app') return card.tipo === 'app';
 		return true;
 	});
 
@@ -21,7 +22,7 @@ export default function IA() {
 			<div className="bg-gray-200 shadow-sm border-b py-4">
 				<div className="container mx-auto px-4">
 					<div className="flex flex-col md:flex-row justify-between items-center">
-						<h3 className="style pull-left text-2xl font-bold uppercase text-primary">IA & Data Science</h3>
+						<h3 className="style pull-left text-2xl font-bold uppercase text-primary">Courses</h3>
 						<ol className="pull-right flex space-x-2 text-sm text-gray-500">
 							<li>
 								<Link className="hover:text-primary transition-colors" to="/">Profile</Link>
@@ -37,8 +38,8 @@ export default function IA() {
 
 				<ul id="filters" className="flex flex-wrap gap-4 justify-start" >
 					<li><span onClick={() => setActiveFilter('all')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'all' ? 'activo' : 'inactivo'}`}>All</span></li>
-					<li><span onClick={() => setActiveFilter('lenguaje')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'lenguaje' ? 'activo' : 'inactivo'}`}>Languages</span></li>
-					<li><span onClick={() => setActiveFilter('theory')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'theory' ? 'activo' : 'inactivo'}`}>Theory</span></li>
+					<li><span onClick={() => setActiveFilter('tools')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'tools' ? 'activo' : 'inactivo'}`}>Tools</span></li>
+					<li><span onClick={() => setActiveFilter('app')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'app' ? 'activo' : 'inactivo'}`}>Apps</span></li>
 				</ul>
 
 				<div id="portfoliolist" className="flex flex-wrap justify-center gap-6">
