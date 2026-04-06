@@ -12,8 +12,8 @@ export default function Courses() {
 
 	const filteredCards = list_cards_back.filter(card => {
 		if (activeFilter === 'all') return true;
-		if (activeFilter === 'tools') return card.tipo === 'tools';
-		if (activeFilter === 'app') return card.tipo === 'app';
+		if (activeFilter === '2025') return card.anio === '2025';
+		if (activeFilter === '2026') return card.anio === '2026';
 		return true;
 	});
 
@@ -38,8 +38,8 @@ export default function Courses() {
 
 				<ul id="filters" className="flex flex-wrap gap-4 justify-start" >
 					<li><span onClick={() => setActiveFilter('all')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'all' ? 'activo' : 'inactivo'}`}>All</span></li>
-					<li><span onClick={() => setActiveFilter('tools')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'tools' ? 'activo' : 'inactivo'}`}>Tools</span></li>
-					<li><span onClick={() => setActiveFilter('app')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'app' ? 'activo' : 'inactivo'}`}>Apps</span></li>
+					<li><span onClick={() => setActiveFilter('2025')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === '2025' ? 'activo' : 'inactivo'}`}>2025</span></li>
+					<li><span onClick={() => setActiveFilter('2026')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === '2026' ? 'activo' : 'inactivo'}`}>2026</span></li>
 				</ul>
 
 				<div id="portfoliolist" className="flex flex-wrap justify-center gap-6">

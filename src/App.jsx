@@ -9,6 +9,7 @@ import IA from './pages/IA';
 import Project from './pages/Project';
 import Block from './pages/Block';
 import Courses from './pages/Courses';
+import Experience from './pages/Experience';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/project" element={<Project />} />
           <Route path="/block" element={<Block />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/experience" element={<Experience />} />
         </Routes>
         <Footer />
       </div>

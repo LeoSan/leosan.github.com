@@ -52,7 +52,7 @@ export default function Header() {
                   <li><Link to="/courses">Courses</Link></li>
                 </ul>
               </li>
-              <li ><a href="experiencia.html">Experience</a></li>
+              <li><Link to="/experience">Experience</Link></li>
               <li ><a href="desarrollo.html">Developing</a></li>
               <li ><a href="contactame.html">Contact</a></li>
             </ul>
