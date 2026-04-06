@@ -2,13 +2,15 @@
   "name": "leosan-portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://LeoSan.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -f -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",

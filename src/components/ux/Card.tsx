@@ -23,7 +23,7 @@ const Card = ({ card }: { card: CardData }) => {
                     <img
                         className="img-responsive w-full h-48 object-contain p-4"
                         alt={`Logo de ${titulo}`}
-                        src={`../public/imagen/${imagen}`}
+                        src={`/imagen/${imagen}`}
                     />
 
                     <div className="card-body p-5 border-t">
