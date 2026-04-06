@@ -54,7 +54,7 @@ export default function Header() {
               </li>
               <li><Link to="/experience">Experience</Link></li>
               <li ><a href="desarrollo.html">Developing</a></li>
-              <li ><a href="contactame.html">Contact</a></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>
         </div>
