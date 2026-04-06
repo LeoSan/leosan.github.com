@@ -53,7 +53,7 @@ export default function Header() {
                 </ul>
               </li>
               <li><Link to="/experience">Experience</Link></li>
-              <li ><a href="desarrollo.html">Developing</a></li>
+              <li><Link to="/developing">Developing</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>
