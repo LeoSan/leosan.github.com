@@ -69,6 +69,27 @@ const list_cards = [
         enlace: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS",
         imagen: "ia/practice.png",
         tipo: "lenguaje"
+    },
+    {
+        titulo: "Curso de Automatizaciones con n8n",
+        texto: "Aprende a identificar, diseñar y ejecutar workflows en n8n Cloud usando un enfoque low-code, optimizando procesos y reduciendo tareas repetitivas en entornos profesionales.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12245-course/diploma/detalle/",
+        imagen: "ia/CursoN8N_01.png",
+        tipo: "lenguaje"
+    },
+    {
+        titulo: "Curso de Workflows Profesionales con n8n",
+        texto: "En este curso aprenderás a construir automatizaciones profesionales en n8n, dominando expresiones avanzadas, subworkflows, lógica de enrutamiento, conexiones con IA y casos prácticos de integración con herramientas externas..",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12250-course/diploma/detalle/",
+        imagen: "ia/CursoN8N_02.png",
+        tipo: "lenguaje"
+    },
+    {
+        titulo: "Curso de n8n Self-Hosted para Empresas",
+        texto: "En este curso aprenderás a desplegar, configurar y operar tu propia instancia de n8n self-hosted, obteniendo control total sobre la infraestructura, seguridad y rendimiento de tus automatizaciones. Avanzaremos desde la instalación en Docker y Kubernetes, hasta el uso del CLI y la API REST de n8n, lo que te permitirá gestionar flujos, usuarios y credenciales de manera programática.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12245-course/diploma/detalle/",
+        imagen: "ia/CursoN8N_03.png",
+        tipo: "lenguaje"
     }
 ];
 
