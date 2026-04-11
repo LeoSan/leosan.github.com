@@ -11,8 +11,10 @@ export default function IA() {
 
 	const filteredCards = list_cards_ia.filter(card => {
 		if (activeFilter === 'all') return true;
-		if (activeFilter === 'lenguaje') return card.tipo === 'lenguaje';
 		if (activeFilter === 'theory') return card.tipo === 'theory';
+		if (activeFilter === 'training') return card.tipo === 'training';
+		if (activeFilter === 'prompt') return card.tipo === 'prompt';
+		if (activeFilter === 'automacion') return card.tipo === 'automacion';
 		return true;
 	});
 
@@ -34,10 +36,11 @@ export default function IA() {
 
 			<div className="mt-6 mx-auto px-4">
 				<Studies />
-
 				<ul id="filters" className="flex flex-wrap gap-4 justify-start" >
 					<li><span onClick={() => setActiveFilter('all')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'all' ? 'activo' : 'inactivo'}`}>All</span></li>
-					<li><span onClick={() => setActiveFilter('lenguaje')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'lenguaje' ? 'activo' : 'inactivo'}`}>Languages</span></li>
+					<li><span onClick={() => setActiveFilter('prompt')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'prompt' ? 'activo' : 'inactivo'}`}>Prompt</span></li>
+					<li><span onClick={() => setActiveFilter('automacion')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'automacion' ? 'activo' : 'inactivo'}`}>Automations</span></li>
+					<li><span onClick={() => setActiveFilter('training')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'training' ? 'activo' : 'inactivo'}`}>Training</span></li>
 					<li><span onClick={() => setActiveFilter('theory')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'theory' ? 'activo' : 'inactivo'}`}>Theory</span></li>
 				</ul>
 
