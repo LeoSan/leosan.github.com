@@ -128,5 +128,15 @@ export const projects = [
       { name: "IA Oficina: Clasificador Visual de Documentos", url: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/02_EJERCICIO_CNN_PROPIO_SET" },
       { name: "Clasificador de Semáforos (Multiclase)", url: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/03_CNN_MULTICAPAS/Respaldo_IA" },
     ]
-  }
+  },
+  {
+    id: 12,
+    year: "2025",
+    technologies: ["Python 3.11+", "Git for Windows", "Scraping", "PostgreSQL 15+", "pandas", "openpyxl", "selenium", "pytest", "Docker"],
+    video: "imagen/porta/monitoreoMELI.webm",
+    company: "Own initiative",
+    companyUrl: "https://github.com/LeoSan/monitoreoMELI",
+    projectName: "Sistema de Análisis de Ventas con Integración de Datos Excel y Monitoreo Competitivo",
+    description: "El proyecto consiste en el desarrollo de una solución de inteligencia de negocio que procese datos de ventas existentes almacenados en archivos Excel, los migre a una base de datos PostgreSQL, y complemente esta información con datos de precios de la competencia obtenidos mediante web scraping selectivo. El sistema generará dashboards analíticos para la toma de decisiones comerciales estratégicas."
+  },
 ];
