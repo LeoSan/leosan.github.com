@@ -74,9 +74,9 @@ export const projects = [
     year: "2019",
     technologies: ["HTML", "Jquery", "Css3", "Drupal", "Scrum", "bootstrap", "PHP", "Mysql", "SqlServer"],
     video: [
-      "imagen/porta/ift_soy_usuario_2017.webm", 
-      "imagen/porta/ift_portal_centro_trabajo_2019.webm", 
-      "imagen/porta/ift_porta_usuario_2019.webm", 
+      "imagen/porta/ift_soy_usuario_2017.webm",
+      "imagen/porta/ift_portal_centro_trabajo_2019.webm",
+      "imagen/porta/ift_porta_usuario_2019.webm",
       "imagen/porta/ift_Infantic_2019.webm"
     ],
     company: "Indra C.V",
@@ -96,7 +96,7 @@ export const projects = [
   },
   {
     id: 10,
-    year: "2021 - current",
+    year: "2021 - 2022",
     technologies: ["React 18.2", "MapBox", "Bootstrap 5", "JavaScript", "TypeScript", "Tailwind"],
     company: "Own initiative",
     companyUrl: "https://leosan.github.io/experiencia.html",
@@ -112,6 +112,21 @@ export const projects = [
       { name: "Example Basic App React Practice 2021 - Strapy", url: "https://basic-practice-strapy.netlify.app/" },
       { name: "Example Basic App React Practice 2023 - Storybook Map", url: "https://basic-practice-storybook-ui.netlify.app/?path=/story/ui-leonard-input--basic&args=size:h2;border:warning" },
       { name: "Example Basic App React Practice 2024 - Guitar Hero", url: "https://sparkly-phoenix-ab310f.netlify.app/" }
+    ]
+  }
+  ,
+  {
+    id: 11,
+    year: "2024 - current",
+    technologies: ["Python 3", "tensorflow", "numpy", "matplotlib", "keras", "binary_crossentropy", "categorical_crossentropy", "softmax", "relu", "sigmoid", "tanh", "mean_squared_error", "mean_absolute_error", "accuracy", "mean_squared_error", "gradio"],
+    company: "Own initiative",
+    companyUrl: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS",
+    projectName: "Master's Degree in Big Data Analysis and Business Intelligence",
+    description: "I public my practices to demonstrate my progress and learning in React and its entire environment, including logical architecture to create an app in react.",
+    links: [
+      { name: "Red Neuronal Convolucional (CNN) desde Cero", url: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/01_EJERCICIO_CNN/AppMiniImagen" },
+      { name: "IA Oficina: Clasificador Visual de Documentos", url: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/02_EJERCICIO_CNN_PROPIO_SET" },
+      { name: "Clasificador de Semáforos (Multiclase)", url: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/03_CNN_MULTICAPAS/Respaldo_IA" },
     ]
   }
 ];
