@@ -139,4 +139,14 @@ export const projects = [
     projectName: "Sistema de Análisis de Ventas con Integración de Datos Excel y Monitoreo Competitivo",
     description: "El proyecto consiste en el desarrollo de una solución de inteligencia de negocio que procese datos de ventas existentes almacenados en archivos Excel, los migre a una base de datos PostgreSQL, y complemente esta información con datos de precios de la competencia obtenidos mediante web scraping selectivo. El sistema generará dashboards analíticos para la toma de decisiones comerciales estratégicas."
   },
+  {
+    id: 13,
+    year: "2026",
+    technologies: ["Python 3.11+", "BeautifulSoup", "Scraping", "playwright", "pandas", "openpyxl", "playwright", "uv", "D3.js"],
+    video: "imagen/porta/DasboardTruthSocial.webm",
+    company: "Own initiative",
+    companyUrl: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/04_DashBoardTrump",
+    projectName: "Cause and Effect Trump about Brent Oil",
+    description: "This interactive data visualization platform analyzes the correlation between social media activity and global energy market fluctuations. By focusing on a ten-year period, the application provides a deep dive into how high-profile political 'social noise' intersects with Brent Oil price volatility. The system features a modern D3.js dashboard with dynamic tooltips and an automated Python-based data processing pipeline, allowing users to identify key moments where political discourse influenced historical market trends."
+  }
 ];
