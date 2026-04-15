@@ -145,8 +145,11 @@ export const projects = [
     technologies: ["Python 3.11+", "BeautifulSoup", "Scraping", "playwright", "pandas", "openpyxl", "playwright", "uv", "D3.js"],
     video: "imagen/porta/DasboardTruthSocial.webm",
     company: "Own initiative",
-    companyUrl: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/04_DashBoardTrump",
+    companyUrl: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/04_DashBoardTrumpBrent",
     projectName: "Cause and Effect Trump about Brent Oil",
-    description: "This interactive data visualization platform analyzes the correlation between social media activity and global energy market fluctuations. By focusing on a ten-year period, the application provides a deep dive into how high-profile political 'social noise' intersects with Brent Oil price volatility. The system features a modern D3.js dashboard with dynamic tooltips and an automated Python-based data processing pipeline, allowing users to identify key moments where political discourse influenced historical market trends."
+    description: "This interactive data visualization platform analyzes the correlation between social media activity and global energy market fluctuations. By focusing on a ten-year period, the application provides a deep dive into how high-profile political 'social noise' intersects with Brent Oil price volatility. The system features a modern D3.js dashboard with dynamic tooltips and an automated Python-based data processing pipeline, allowing users to identify key moments where political discourse influenced historical market trends.",
+    links: [
+      { name: "Dashaboard", url: "https://funny-profiterole-bb7e80.netlify.app/" },
+    ]
   }
 ];
