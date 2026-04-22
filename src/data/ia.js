@@ -104,6 +104,20 @@ const list_cards = [
         enlace: "https://platzi.com/p/LEONARDCUENCA/curso/11157-course/diploma/detalle/",
         imagen: "ia/CursoIA_01.png",
         tipo: "prompt"
+    },
+    {
+        titulo: "Gemini Course",
+        texto: "Learn how to integrate Gemini into your daily workflow and use it as a copilot for tasks such as: writing and improving emails and documents, data analysis, in-depth research with Deep Research, content creation (images with Nano Banana, videos with VEO, presentations and websites with Canvas), and process automation with custom Gems. Master its use with Gmail, Docs, Sheets, and Slides.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12546-course/diploma/detalle/",
+        imagen: "ia/CursoGemini_01.png",
+        tipo: "models"
+    },
+    {
+        titulo: "ChatGPT Course",
+        texto: "Master ChatGPT to analyze data, generate images, create documents with Canvas, and develop custom GPTs. Learn advanced prompting, in-depth research, data visualization, and agent mode to transform your productivity from any device.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12323-prompt-engineering/diploma/detalle/",
+        imagen: "ia/CursoChatGPT_01.png",
+        tipo: "models"
     }
 ];
 

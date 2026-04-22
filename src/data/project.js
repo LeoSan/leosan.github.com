@@ -89,6 +89,13 @@ const list_cards = [
         enlace: "#",
         imagen: "gestion/analytics.png",
         tipo: "tools"
+    },
+    {
+        titulo: "Professional Scrum Course",
+        texto: "Master Scrum to work agilely and effectively. Learn to plan sprints, prioritize tasks, facilitate events, and deliver consistent value. Apply its principles to projects or your team and transform the way you generate results.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12146-course/diploma/detalle/",
+        imagen: "gestion/scrum_platzi.png",
+        tipo: "tools"
     }
 ];
 

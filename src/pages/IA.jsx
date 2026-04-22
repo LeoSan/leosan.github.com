@@ -15,6 +15,7 @@ export default function IA() {
 		if (activeFilter === 'training') return card.tipo === 'training';
 		if (activeFilter === 'prompt') return card.tipo === 'prompt';
 		if (activeFilter === 'automacion') return card.tipo === 'automacion';
+		if (activeFilter === 'models') return card.tipo === 'models';
 		return true;
 	});
 
@@ -42,6 +43,7 @@ export default function IA() {
 					<li><span onClick={() => setActiveFilter('automacion')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'automacion' ? 'activo' : 'inactivo'}`}>Automations</span></li>
 					<li><span onClick={() => setActiveFilter('training')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'training' ? 'activo' : 'inactivo'}`}>Training</span></li>
 					<li><span onClick={() => setActiveFilter('theory')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'theory' ? 'activo' : 'inactivo'}`}>Theory</span></li>
+					<li><span onClick={() => setActiveFilter('models')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'models' ? 'activo' : 'inactivo'}`}>Models</span></li>
 				</ul>
 
 				<div id="portfoliolist" className="flex flex-wrap justify-center gap-6">
