@@ -115,7 +115,7 @@ const list_cards = [
     {
         titulo: "ChatGPT Course",
         texto: "Master ChatGPT to analyze data, generate images, create documents with Canvas, and develop custom GPTs. Learn advanced prompting, in-depth research, data visualization, and agent mode to transform your productivity from any device.",
-        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12323-prompt-engineering/diploma/detalle/",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12319-chatgpt/diploma/detalle/",
         imagen: "ia/CursoChatGPT_01.png",
         tipo: "models"
     }

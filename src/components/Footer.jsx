@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between border-t border-primary pt-8">
             <div className="mb-4 md:mb-0 hover:opacity-80 transition-opacity">
               <a href="/">
-                <img src="../public/imagen/logo.png" alt="Footer Logo" className="w-24 md:w-32" />
+                <img src="/imagen/logo.png" alt="Footer Logo" className="w-24 md:w-32" />
               </a>
             </div>
 

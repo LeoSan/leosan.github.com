@@ -2,7 +2,7 @@ export const experiences = [
   {
     id: 2026,
     year: "2026 - Actual",
-    company: "MAMPRO - Mexico City",
+    company: "MANPRO - Mexico City",
     logo: "../public/imagen/exp/man.png",
     place: "CDMX, México",
     position: "Developer FULL-SATCK",

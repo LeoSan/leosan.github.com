@@ -7,13 +7,13 @@ export default function MainGrid() {
       <div className="container mx-auto px-4">
 
         {/* Top Grid */}
-        <div className="bg-neutral-200 p-8 rounded-lg flex flex-col md:flex-row items-center gap-8 mb-12 shadow-sm relative overflow-hidden">
+        <div className="bg-neutral-200 p-8 rounded-lg flex flex-col md:flex-row items-center gap-8 mb-12 shadow-sm relative overflow-hidden group">
           <div className="text-primary-light bg-white p-6 rounded-full shadow-inner">
-            <FaLightbulb className="text-6xl" />
+            <FaLightbulb className="text-6xl transition-all duration-500 group-hover:text-yellow-400 group-hover:drop-shadow-[0_0_15px_rgba(250,204,21,0.8)]" />
           </div>
           <div>
             <h3 className="text-2xl md:text-3xl text-neutral-500 font-bold leading-relaxed">
-              Young entrepreneur, web media and infrastructure builder, enthusiastic, free innovator, looking for new goals and working to achieve them.
+              I'm Leonard Cuenca, a Software Engineer and Full Stack Developer with an entrepreneurial mindset. Throughout my career, I've managed the entire software development lifecycle, assuming leadership roles and technical responsibilities. Currently, I complement my technical expertise with a specialized focus on data analysis, transforming complex information into innovative and strategic solutions.
             </h3>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function MainGrid() {
               Teach others the best way to give back and strengthen our skills and knowledge. Let's pronounce the mantra Let's do good without looking at who!!!
             </p>
             <div className="absolute -bottom-5">
-              <a href="https://github.com/LeoSan" className="inline-block px-8 py-3 bg-white text-primary border border-primary shadow-[0_4px_#47817E] group-hover:bg-secondary group-hover:text-white group-hover:shadow-[0_4px_#ab3c3c] font-bold uppercase rounded transition-all">
+              <a href="https://www.linkedin.com/in/cuenca623/?skipRedirect=true" className="inline-block px-8 py-3 bg-white text-primary border border-primary shadow-[0_4px_#47817E] group-hover:bg-secondary group-hover:text-white group-hover:shadow-[0_4px_#ab3c3c] font-bold uppercase rounded transition-all">
                 Leer Mas
               </a>
             </div>

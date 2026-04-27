@@ -15,6 +15,8 @@ export default function Back() {
 		if (activeFilter === 'lenguaje') return card.tipo === 'lenguaje';
 		if (activeFilter === 'app') return card.tipo === 'app';
 		if (activeFilter === 'patrones') return card.tipo === 'patrones';
+		if (activeFilter === 'Framework') return card.tipo === 'Framework';
+		if (activeFilter === 'BD') return card.tipo === 'BD';
 		return true;
 	});
 
@@ -42,6 +44,8 @@ export default function Back() {
 					<li><span onClick={() => setActiveFilter('lenguaje')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'lenguaje' ? 'activo' : 'inactivo'}`}>Languages</span></li>
 					<li><span onClick={() => setActiveFilter('app')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'app' ? 'activo' : 'inactivo'}`}>Tools</span></li>
 					<li><span onClick={() => setActiveFilter('patrones')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'patrones' ? 'activo' : 'inactivo'}`}>Patterns</span></li>
+					<li><span onClick={() => setActiveFilter('Framework')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'Framework' ? 'activo' : 'inactivo'}`}>Framework</span></li>
+					<li><span onClick={() => setActiveFilter('BD')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'BD' ? 'activo' : 'inactivo'}`}>Data Base</span></li>
 				</ul>
 
 				<div id="portfoliolist" className="flex flex-wrap justify-center gap-6">
