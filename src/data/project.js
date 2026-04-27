@@ -96,6 +96,13 @@ const list_cards = [
         enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12146-course/diploma/detalle/",
         imagen: "gestion/scrum_platzi.png",
         tipo: "tools"
+    },
+    {
+        titulo: "Jira Projects Course",
+        texto: "Organize and control agile projects by managing tasks, workflows, roles, permissions, automations, reports, and dashboards in Jira. Learn to customize processes, boards, and notifications for efficient teams.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/11967-proyectos-jira/diploma/detalle/",
+        imagen: "gestion/jira_proyectos_platzi.png",
+        tipo: "tools"
     }
 ];
 
