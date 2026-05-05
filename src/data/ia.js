@@ -118,6 +118,13 @@ const list_cards = [
         enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12319-chatgpt/diploma/detalle/",
         imagen: "ia/CursoChatGPT_01.png",
         tipo: "models"
+    },
+    {
+        titulo: "GitHub Copilot Course",
+        texto: "Automate software development tasks using GitHub Copilot in VS Code and GitHub.com. Generate code, documentation, APIs, tests, scripts, and templates while resolving bugs and optimizing workflows.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/11818-github-copilot/diploma/detalle/",
+        imagen: "ia/CursoGithub_01.png",
+        tipo: "models"
     }
 ];
 
