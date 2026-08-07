@@ -12,6 +12,7 @@ import Courses from './pages/Courses';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 import Developing from './pages/Developing';
+import Learn from './pages/Learn';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/courses" element={<Courses />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/developing" element={<Developing />} />
+          <Route path="/learn" element={<Learn />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLightbulb, FaRocket, FaFlag, FaFlask } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function MainGrid() {
   return (
@@ -55,9 +56,9 @@ export default function MainGrid() {
               The best way to tackle challenges is to grab your best tools and start a hands-on project. Since the best way to learn is by doing.
             </p>
             <div className="absolute -bottom-5">
-              <a href="https://github.com/LeoSan" className="inline-block px-8 py-3 bg-white text-primary border border-primary shadow-[0_4px_#47817E] group-hover:bg-secondary group-hover:text-white group-hover:shadow-[0_4px_#ab3c3c] font-bold uppercase rounded transition-all">
+              <Link to="/learn" className="inline-block px-8 py-3 bg-white text-primary border border-primary shadow-[0_4px_#47817E] group-hover:bg-secondary group-hover:text-white group-hover:shadow-[0_4px_#ab3c3c] font-bold uppercase rounded transition-all">
                 Leer Mas
-              </a>
+              </Link>
             </div>
           </div>
 
