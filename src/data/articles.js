@@ -1,133 +1,40 @@
 const list_articles = [
     {
         id: 1,
-        titulo: "Design Patterns in React: Beyond Components",
-        cuerpo: `React has evolved far beyond simple component-based architecture. Understanding advanced design patterns is crucial for building scalable and maintainable applications.
+        titulo: "A Little Front-End for the Road",
+        cuerpo: `🚀A Little Front-End for the Road: These Last 26 Years — What I Learned Building 30 Visual Styles on Top of the Same Components 🚀
 
-**Compound Components Pattern**
-This pattern allows components to share implicit state while giving the consumer full control over rendering. Think of it like HTML's <select> and <option> — they work together implicitly.
+When I started out in this field, I admired — and still admire — the geniuses who built websites back in the Flash era. Sites that were almost sensory experiences: impossible transitions, animated typography, entire worlds packed into a browser.
 
-**Render Props & Custom Hooks**
-While render props were the go-to pattern for sharing logic, custom hooks have largely replaced them. However, render props still shine when you need to share logic that involves JSX rendering decisions.
+I remember thinking, "that's what I want to do." Over the years I understood something a little uncomfortable: that's not who I am. I'm not the visual genius who designs the page that leaves you breathless. For a long time, I felt like that was a shortcoming.
 
-**Key Takeaways:**
-- Always evaluate if a simpler pattern can solve the problem before reaching for complex ones
-- Custom hooks are the modern way to share stateful logic
-- Compound components provide flexible APIs for component libraries
-- The best pattern is the one your team can understand and maintain
+Today I see it differently. What actually hooked me on front-end development was never the aesthetics on their own, but the question underneath:
 
-The journey of mastering React patterns is continuous. Each project brings new challenges that push us to think differently about component architecture.`,
-        fecha: "2026-08-07",
-        tag: "Front",
-        imagen: "learn/frontend.png",
-        url: "https://github.com/LeoSan/EscuelaJavaScript2021",
-        likes: 0
-    },
-    {
-        id: 2,
-        titulo: "API REST Best Practices: Lessons from Production",
-        cuerpo: `After years of building and consuming REST APIs in production environments, I've compiled the most impactful best practices that make a real difference.
+- How do I make it so a person can solve what they came for with the least friction possible⁉️
+- How do I turn a seven-click process into three⁉️
+- How do I make a summary understandable in three seconds instead of forcing someone to read a paragraph⁉️
 
-**Versioning Strategy**
-Always version your APIs from day one. Whether you choose URL versioning (/api/v1/) or header-based versioning, consistency is key. I prefer URL versioning for its simplicity and discoverability.
+Front-end has always chased two things at once, even if we don't always notice because one makes a lot more noise than the other.
 
-**Error Handling Done Right**
-A well-structured error response saves hours of debugging. Always include: HTTP status code, error code, human-readable message, and a timestamp. Consider adding a trace ID for distributed systems.
+On one side, the visual layer: from the plain HTML of the '90s we moved to skeuomorphism (interfaces that imitated leather, metal, physical buttons), then to flat design, which stripped everything down to color and typography, then to Material Design with its elevation system, to neumorphism, to glassmorphism, to neobrutalism — each wave reacting against the last, almost always for aesthetic or trend-driven reasons.
 
-**Pagination & Filtering**
-Never return unbounded collections. Implement cursor-based pagination for large datasets — it's more performant than offset-based pagination and handles data mutations gracefully.
+On the other side, running in parallel and with far less spotlight, usability has been quietly maturing: Nielsen's heuristics, Fitts's Law, task-centered design, design systems, accessibility as a requirement rather than a "nice to have." This second evolution doesn't show up in a screenshot. It doesn't generate a "wow" in a feed. But it's the one that decides whether a system actually works for someone using it at 7 a.m., in a rush, on a phone, with one hand.
 
-**Security Essentials:**
-- Always validate input on the server side, never trust the client
-- Implement rate limiting to prevent abuse
-- Use HTTPS everywhere, no exceptions
-- Implement proper CORS policies
+My hypothesis is simple: the visual layer is the skin. Usability is the skeleton. And a badly built skeleton doesn't get fixed with better skin.
 
-**Performance Tips:**
-- Use HTTP caching headers (ETag, Cache-Control)
-- Compress responses with gzip/brotli
-- Consider implementing GraphQL for complex data requirements
+What did this exercise confirm for me?
 
-Building robust APIs is an art that combines technical excellence with empathy for the developers who will consume them.`,
-        fecha: "2026-08-05",
-        tag: "Back",
-        imagen: "learn/backend.png",
-        url: "https://github.com/LeoSan/DesarrolloWebBackendPHP_PLATZI_2021",
-        likes: 0
-    },
-    {
-        id: 3,
-        titulo: "From Raw Data to Insights: My Data Pipeline Journey",
-        cuerpo: `Building effective data pipelines is one of the most rewarding challenges in modern software engineering. Here's what I've learned from building pipelines that process millions of records daily.
+Aesthetics are interchangeable; interaction shouldn't be. You can completely redesign a system visually without touching a single user flow, if you separated those layers properly from the start.
 
-**The ETL vs ELT Debate**
-Traditional ETL (Extract, Transform, Load) works well for structured data with known schemas. However, modern data lakes favor ELT (Extract, Load, Transform) — load raw data first, then transform as needed. This preserves data fidelity and allows for retrospective analysis.
+Web development, when combined with systems thinking (design systems, reusable components, design tokens), makes exactly this possible: clean interfaces, adapted to whatever visual trend the context or brand calls for, without that trend ever compromising the reason the user is there in the first place.
 
-**Data Quality is Everything**
-The most sophisticated ML model is useless with bad data. Implement data quality checks at every stage:
-- Schema validation at ingestion
-- Null checks and type coercion during transformation
-- Statistical anomaly detection on outputs
-- Data lineage tracking for auditability
-
-**Tools That Made a Difference:**
-- Python + Pandas for prototyping transformations
-- Apache Airflow for orchestration
-- dbt for SQL-based transformations
-- Great Expectations for data validation
-
-**Lessons Learned:**
-- Start simple, iterate fast — don't over-engineer your first pipeline
-- Monitor everything: latency, data volume, error rates
-- Document your data schemas obsessively
-- Build idempotent pipelines that can be safely re-run
-
-The data engineering field is evolving rapidly. Staying current requires continuous learning and a willingness to experiment with new tools and approaches.`,
-        fecha: "2026-08-03",
-        tag: "Data",
-        imagen: "learn/data.png",
-        url: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024",
-        likes: 0
-    },
-    {
-        id: 4,
-        titulo: "Practical AI: Integrating LLMs into Real Applications",
-        cuerpo: `The explosion of Large Language Models (LLMs) has opened incredible opportunities for software engineers. Here's my practical guide to integrating AI into production applications.
-
-**Prompt Engineering Fundamentals**
-The quality of your prompts directly determines the quality of AI outputs. Key principles:
-- Be specific and provide context
-- Use few-shot examples for complex tasks
-- Structure your prompts with clear instructions and constraints
-- Iterate and test systematically
-
-**RAG (Retrieval Augmented Generation)**
-Pure LLMs have knowledge cutoffs and can hallucinate. RAG solves this by:
-1. Indexing your domain-specific documents into a vector database
-2. Retrieving relevant chunks based on the user's query
-3. Feeding those chunks as context to the LLM
-4. Generating grounded, accurate responses
-
-**Production Considerations:**
-- Implement guardrails to prevent harmful outputs
-- Cache common queries to reduce API costs
-- Monitor response quality with automated evaluation
-- Have fallback mechanisms when the AI service is unavailable
-- Always inform users they're interacting with AI
-
-**Cost Optimization:**
-- Use smaller models for simpler tasks (classification, extraction)
-- Implement streaming for better user experience
-- Batch non-urgent requests
-- Fine-tune models for repetitive domain-specific tasks
-
-AI is a powerful tool, but it's not magic. The best AI applications combine machine intelligence with thoughtful engineering and human oversight.`,
+**What do you prioritize when you design or build: the first visual impression, or how many clicks it takes the user to reach their goal? I'd love to hear your take in the comments.**`,
         fecha: "2026-08-01",
-        tag: "IA",
-        imagen: "learn/ia.png",
-        url: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024",
-        likes: 0
-    }
+        tag: "Front",
+        imagen: "articulo/30casos_front_001.png",
+        url: "https://animated-churros-4dd771.netlify.app/",
+        likes: 1
+    },
 ];
 
 export default list_articles;
