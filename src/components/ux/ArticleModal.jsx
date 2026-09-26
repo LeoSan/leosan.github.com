@@ -154,6 +154,17 @@ export default function ArticleModal({ article, onClose, likes, onLike }) {
                                 View Resource
                             </a>
                         )}
+                        {article.code && (
+                            <a
+                                href={article.code}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-primary-dark hover:bg-primary-dark text-white rounded-lg font-semibold transition-all duration-200 hover:shadow-lg"
+                            >
+                                <FaExternalLinkAlt className="text-sm" />
+                                Source Code
+                            </a>
+                        )}
                         <button
                             onClick={onClose}
                             className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 text-gray-600 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
