@@ -57,7 +57,7 @@ export default function Learn() {
     return (
         <div className="font-sans antialiased text-neutral-700 bg-neutral-100 min-h-screen">
             {/* Breadcrumb */}
-            <div className="bg-gray-200 shadow-sm border-b py-4">
+            <div className="bg-gray-200 shadow-xs border-b py-4">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <h3 className="style pull-left text-2xl font-bold uppercase text-primary flex items-center gap-3">

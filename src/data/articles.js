@@ -34,6 +34,7 @@ Web development, when combined with systems thinking (design systems, reusable c
         imagen: "articulo/30casos_front_001.png",
         url: "https://animated-churros-4dd771.netlify.app/",
         code: null,
+        urlLinkedIn: "https://www.linkedin.com/feed/update/urn:li:activity:7492250846345424896/",
         likes: 4
     },
     {
@@ -56,10 +57,11 @@ Multidimensional Analytics (/analytics): I went beyond raw volume. I calculated 
 - Controller: Custom React Hooks to orchestrate global filtering in real-time.
 - View: Dynamic dashboards built with recharts and react-wordcloud (Bubbles, Treemaps, and Radars).`,
         fecha: "2026-04-01",
-        tag: "DATA",
+        tag: "Data",
         imagen: "articulo/ia_stack.png",
         url: "https://peppy-capybara-81d560.netlify.app/",
         code: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/05_DashBoardRadarTecnologia",
+        urlLinkedIn: "https://www.linkedin.com/feed/update/urn:li:activity:7457523040332034049/",
         likes: 5
     },
     {
@@ -76,10 +78,11 @@ Quantitative Logic: Implemented Log Returns in the client-side logic to measure 
 The result is a fluid experience where every data point tells a story of market volatility.
 `,
         fecha: "2026-03-01",
-        tag: "DATA",
+        tag: "Data",
         imagen: "articulo/trump_brent.png",
         url: "https://funny-profiterole-bb7e80.netlify.app/",
         code: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/04_DashBoardTrumpBrent",
+        urlLinkedIn: "https://www.linkedin.com/feed/update/urn:li:activity:7457523081281081344/",
         likes: 5
     },
     {
@@ -116,44 +119,55 @@ Generalization Check: The minimal gap between training and validation accuracy c
         imagen: "articulo/mnist.png",
         url: null,
         code: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/01_EJERCICIO_CNN/AppMiniImagen",
+        urlLinkedIn: "https://www.linkedin.com/feed/update/urn:li:activity:7510417816907460609/",
         likes: 5
     },
     {
         id: 5,
-        titulo: "How can Computer Vision streamline tedious office paperwork? 📄🧾🤔",
-        cuerpo: `Every modern workspace handles countless documents daily—from expense receipts and invoices to formal letter-sized reports. Driven by the challenge of automating manual sorting without relying on heavy cloud APIs, I decided to build a Local Visual Document Classifier using Convolutional Neural Networks (CNNs) with TensorFlow, Keras, and Gradio.
+        titulo: "Who said document sorting requires heavy cloud APIs and monthly bills? 📄⚡",
+        cuerpo: `Every modern workspace drowns in paper: crumpled expense receipts mixed with standard letter reports. Instead of outsourcing this to a black-box cloud service, I took a step back to solid engineering fundamentals and built a Local Visual Document Classifier from scratch using CNNs with TensorFlow, Keras, and Gradio.
 
-The objective: Visually distinguish between Expense Receipts/Tickets and Letter-Sized Text Sheets directly on-device with high confidence and zero cloud latency.
+🎯 The Goal: Visually separate receipts from letter-sized documents entirely on-device, with high confidence and zero network latency.
 
-Here is a breakdown of the modular pipeline architecture, the technical hurdles encountered, and how they were solved:
+Here’s a look under the hood at the pipeline architecture and the real-world bugs tackled along the way:
 
-🚀 The Pipeline Architecture
-1. Dataset Sanitization & Forensic Cleaning (/data_cleaning):
+1️⃣ Dataset Sanitization & Forensic Cleaning (/data_cleaning)
+The hurdle: Hitting INVALID_ARGUMENT: Unknown image file format midway through batch loading—caused by mobile formats (like Apple's .HEIC) masquerading under fake .jpg extensions.
 
-The Technical Hurdle: Encountered INVALID_ARGUMENT: Unknown image file format during batch loading caused by mobile device formats (such as Apple .HEIC) disguised with false .jpg extensions.
-The Solution: Engineered a custom validation script using Python’s imghdr to inspect the actual byte headers ("file signature DNA") instead of trusting file extensions, automatically purging corrupted or spoofed images before ingestion.
-2. The 5-Step Atomic Preprocessing Recipe (/data_pipeline):
+The fix: Never trust the extension. I wrote a byte-level inspection script using Python’s imghdr to verify the actual file signatures (magic bytes) before feeding anything into the model pipeline.
 
-Deterministic Constants: Standardized inputs to 128x128x3 (Full RGB color channels) with a lightweight batch size of 8 for memory stability.
-Dynamic Stratified Split: Partitioned the directory structure into an 80/20 ratio (80% Training / 20% Validation exam).
-Automatic Class Indexing: Auto-discovered directory schemas (receipts vs. letter_sheets).
-Mathematical Normalization: Scaled RGB pixel intensities from [0, 255] to [0.0, 1.0] (dividing by 255.0) to ensure fast convergence and avoid gradient explosion.
-RAM & I/O Optimization: Implemented tf.data pipelines with .cache() and .prefetch(tf.data.AUTOTUNE)—allowing the CPU to prepare the next batch in RAM concurrently while the GPU/accelerator trains the current one.
-3. Feature Extraction & CNN Architecture (/model_architecture):
+2️⃣ The 5-Step Atomic Preprocessing Recipe (/data_pipeline)
+Real ML engineering happens in data ingestion:
 
-Convolutional Base: Multi-stage Conv2D layers to capture spatial geometry, paper edges, text block density, and receipt aspect ratios.
-Spatial Compression: MaxPooling2D layers to compress feature maps, retain dominant signals, and prevent overfitting.
-Decision Top: Flatten into dense layers paired with ReLU activations and a final Sigmoid output neuron returning a calibrated probability score (0.0 = Letter Sheet, 1.0 = Receipt).
-🎨 Interactive Real-Time App (/gradio_app)
-To turn the trained .keras model into an actionable tool:
+Standardized inputs: Uniform 128x128x3 RGB inputs with a lightweight batch size of 8 for memory stability.
 
-Interactive UI with Gradio: Developed a lightweight local web interface supporting drag-and-drop file uploads and live webcam capture.
-Instant Inference: Snaps a picture of any document on your desk and outputs real-time classification verdicts with confidence percentages (e.g., "Receipt detected with 96.4% confidence").`,
-        fecha: "2026-02-01",
+Stratified 80/20 Split: Clean separation between training and validation sets.
+
+Normalization: Scaled pixel values from [0, 255] down to [0.0, 1.0] to speed up convergence and stabilize gradients.
+
+RAM & I/O Optimization: Harnessed tf.data with .cache() and .prefetch(tf.data.AUTOTUNE). The CPU prepares the next batch in memory while the accelerator trains the current one—zero idle cycles.
+
+3️⃣ Feature Extraction & CNN Architecture (/model_architecture)
+Conv2D blocks: Extract spatial geometry, paper aspect ratios, and text density distribution.
+
+MaxPooling2D: Compress feature maps, retain dominant signals, and prevent overfitting.
+
+Decision Top: Dense layers with ReLU, ending with a single Sigmoid neuron that outputs an interpretable probability score (0.0 = Letter Sheet, 1.0 = Receipt).
+
+4️⃣ Live Interactive App with Gradio (/gradio_app)
+A model is only as good as its usability. Built a quick local UI with Gradio that supports drag-and-drop and real-time webcam captures—delivering instant on-device verdicts with confidence scores (e.g., "Receipt detected with 96.4% confidence").
+
+💡 Key takeaway: Mastering the basics—from raw file bytes and data pipelines to tensor dimensions—is what turns theoretical machine learning into dependable, production-ready tools.
+
+When handling edge computer vision tasks, do you lean towards lean custom models or pre-built APIs? Let’s chat in the comments! 👇
+
+#MachineLearning #DeepLearning #ComputerVision #TensorFlow #Python #SoftwareEngineering`,
+        fecha: "2026-10-01",
         tag: "IA",
         imagen: "articulo/document_vision.png",
         url: null,
         code: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/02_EJERCICIO_CNN_PROPIO_SET",
+        urlLinkedIn: null,
         likes: 5
     },
 

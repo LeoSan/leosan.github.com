@@ -16,7 +16,7 @@ const Card = ({ card }: { card: CardData }) => {
         <div data-cat={tipo} className={`portfolio ${tipo} mix_all`}>
             <div className="portfolio-wrapper">
                 <div
-                    className="card bg-white shadow-md rounded overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                    className="card bg-white shadow-md rounded-sm overflow-hidden hover:shadow-xl transition-shadow duration-300"
                     style={{ width: '18rem' }}
                 >
                     {/* El 'tipo' arma la ruta de la imagen */}
@@ -37,7 +37,7 @@ const Card = ({ card }: { card: CardData }) => {
 
                         <a
                             href={enlace}
-                            className="btn btn-primary block w-full text-center bg-primary text-white py-2 rounded hover:bg-primary-dark transition-colors"
+                            className="btn btn-primary block w-full text-center bg-primary text-white py-2 rounded-sm hover:bg-primary-dark transition-colors"
                             target="_blank"
                             rel="noreferrer"
                         >

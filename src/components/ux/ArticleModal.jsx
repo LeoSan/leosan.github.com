@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FaTimes, FaHeart, FaExternalLinkAlt, FaCalendarAlt, FaTag } from 'react-icons/fa';
+import { FaTimes, FaHeart, FaExternalLinkAlt, FaCalendarAlt, FaTag, FaLinkedin } from 'react-icons/fa';
 
 const TAG_COLORS = {
     Front: { bg: 'bg-blue-500', text: 'text-blue-500', border: 'border-blue-500', light: 'bg-blue-50' },
@@ -163,6 +163,17 @@ export default function ArticleModal({ article, onClose, likes, onLike }) {
                             >
                                 <FaExternalLinkAlt className="text-sm" />
                                 Source Code
+                            </a>
+                        )}
+                        {article.urlLinkedIn && (
+                            <a
+                                href={article.urlLinkedIn}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-primary-dark hover:bg-primary-dark text-white rounded-lg font-semibold transition-all duration-200 hover:shadow-lg"
+                            >
+                                <FaLinkedin className="text-sm" />
+                                LinkedIn
                             </a>
                         )}
                         <button

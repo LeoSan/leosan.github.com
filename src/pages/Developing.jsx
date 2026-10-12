@@ -33,7 +33,7 @@ export default function Developing() {
                 const el = document.getElementById(`section-${p.id}`);
                 if(el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
               }}
-              className="bg-white px-4 py-2 rounded-full text-sm font-semibold text-neutral-600 shadow-sm border border-neutral-200 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
+              className="bg-white px-4 py-2 rounded-full text-sm font-semibold text-neutral-600 shadow-xs border border-neutral-200 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
             >
               Projects {p.id}
             </button>

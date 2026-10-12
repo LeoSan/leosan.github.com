@@ -1,17 +1,39 @@
 @import './assets/effects.css';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@theme {
+  --color-primary: #62A29E;
+  --color-primary-light: #76C7C0;
+  --color-primary-dark: #47817E;
+  --color-secondary: #E2534B;
+  --color-secondary-light: #E8645A;
+  --color-secondary-dark: #C03C35;
+  --color-neutral-100: #F3F3F3;
+  --color-neutral-200: #ececec;
+  --color-neutral-300: #DFDFDF;
+  --color-neutral-500: #8C9899;
+  --color-neutral-700: #888888;
+  --color-neutral-900: #333333;
+  --font-sans: "Roboto Condensed", sans-serif;
+}
 
+/* v4 cambió el color de borde por defecto a currentColor; se mantiene el de v3 */
 @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
   body {
     @apply bg-neutral-100 text-neutral-700 font-sans;
   }
 
   .activo {
-    @apply active border-primary text-primary hover:bg-primary hover:text-white;
+    @apply border-primary text-primary hover:bg-primary hover:text-white;
   }
 
   .inactivo {

@@ -43,7 +43,7 @@ export default function Timeline() {
             >
               <div className="flex flex-col md:flex-row justify-between items-start mb-8 gap-6">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-500 mb-2">
+                  <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-linear-to-r from-primary to-blue-500 mb-2">
                     {exp.company}
                   </h2>
                   <div className="inline-flex items-center space-x-2 bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold mb-4 border border-blue-200">
@@ -53,7 +53,7 @@ export default function Timeline() {
                 </div>
                 
                 {/* Fallback image rendering (as we don't know if these paths resolve) */}
-                <div className="hidden md:block w-32 h-auto object-contain bg-white p-2 rounded-lg shadow-sm border border-neutral-100 flex items-center justify-center min-h-[60px]">
+                <div className="hidden md:block w-32 h-auto object-contain bg-white p-2 rounded-lg shadow-xs border border-neutral-100 flex items-center justify-center min-h-[60px]">
                   <FaBuilding className="text-4xl text-neutral-300" />
                   {/* <img src={`/${exp.logo}`} alt={exp.company} className="max-w-full max-h-full object-contain" onError={(e) => e.target.style.display = 'none'} /> */}
                 </div>
@@ -62,7 +62,7 @@ export default function Timeline() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Left Column: Details */}
                 <div className="space-y-6">
-                  <div className="bg-neutral-50 p-6 rounded-xl border border-neutral-100 shadow-sm transition hover:shadow-md">
+                  <div className="bg-neutral-50 p-6 rounded-xl border border-neutral-100 shadow-xs transition hover:shadow-md">
                     <h3 className="text-xl font-bold mb-4 text-primary border-b border-neutral-200 pb-2">Information</h3>
                     
                     <div className="space-y-4">
@@ -91,7 +91,7 @@ export default function Timeline() {
                             <span className="block text-sm text-neutral-500 font-semibold uppercase tracking-wider">Technologies</span>
                             <div className="flex flex-wrap gap-2 mt-1">
                               {exp.technologies.split(',').map((tech, i) => (
-                                <span key={i} className="bg-neutral-200 text-neutral-700 px-2 py-1 rounded text-xs font-medium">
+                                <span key={i} className="bg-neutral-200 text-neutral-700 px-2 py-1 rounded-sm text-xs font-medium">
                                   {tech.trim()}
                                 </span>
                               ))}
@@ -105,7 +105,7 @@ export default function Timeline() {
 
                 {/* Right Column: Responsibilities */}
                 <div>
-                  <div className="bg-white p-6 rounded-xl border border-neutral-100 shadow-sm transition hover:shadow-md h-full">
+                  <div className="bg-white p-6 rounded-xl border border-neutral-100 shadow-xs transition hover:shadow-md h-full">
                     <h3 className="text-xl font-bold mb-4 text-primary border-b border-neutral-200 pb-2">Responsibilities</h3>
                     <ul className="space-y-3">
                       {exp.responsibilities.map((resp, i) => (

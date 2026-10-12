@@ -9,14 +9,14 @@ export default function MainSlider() {
   return (
     <div className="w-full relative h-[60vh] md:h-[80vh] bg-black group overflow-hidden">
       {/* Botón Anterior */}
-      <button className="custom-prev absolute top-1/2 left-4 md:left-8 z-20 -translate-y-1/2 w-[50px] h-[50px] bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all shadow-lg cursor-pointer md:opacity-0 md:group-hover:opacity-100 flex-shrink-0">
+      <button className="custom-prev absolute top-1/2 left-4 md:left-8 z-20 -translate-y-1/2 w-[50px] h-[50px] bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-xs transition-all shadow-lg cursor-pointer md:opacity-0 md:group-hover:opacity-100 shrink-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
         </svg>
       </button>
 
       {/* Botón Siguiente */}
-      <button className="custom-next absolute top-1/2 right-4 md:right-8 z-20 -translate-y-1/2 w-[50px] h-[50px] bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all shadow-lg cursor-pointer md:opacity-0 md:group-hover:opacity-100 flex-shrink-0">
+      <button className="custom-next absolute top-1/2 right-4 md:right-8 z-20 -translate-y-1/2 w-[50px] h-[50px] bg-black/40 hover:bg-black/70 text-white rounded-full flex items-center justify-center backdrop-blur-xs transition-all shadow-lg cursor-pointer md:opacity-0 md:group-hover:opacity-100 shrink-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
         </svg>
@@ -67,7 +67,7 @@ export default function MainSlider() {
             <div className="absolute inset-0 bg-black/50 z-0"></div>
             <div className="absolute inset-0 flex items-center justify-center z-10">
               <h2 className="text-white text-3xl md:text-5xl font-bold p-4 text-center drop-shadow-lg">
-                Mastering a programming language goes far beyond writing lines of code; it is the superpower of harnessing technology to deliver real-world solutions.
+                "Code is like humor. When you have to explain it, it’s bad." — Cory House
               </h2>
             </div>
           </div>
