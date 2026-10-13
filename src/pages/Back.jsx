@@ -15,12 +15,14 @@ export default function Back() {
 		if (activeFilter === 'lenguaje') return card.tipo === 'lenguaje';
 		if (activeFilter === 'app') return card.tipo === 'app';
 		if (activeFilter === 'patrones') return card.tipo === 'patrones';
+		if (activeFilter === 'Framework') return card.tipo === 'Framework';
+		if (activeFilter === 'BD') return card.tipo === 'BD';
 		return true;
 	});
 
 	return (
 		<div className="font-sans antialiased text-neutral-700 bg-neutral-100 min-h-screen">
-			<div className="bg-gray-200 shadow-sm border-b py-4">
+			<div className="bg-gray-200 shadow-xs border-b py-4">
 				<div className="container mx-auto px-4">
 					<div className="flex flex-col md:flex-row justify-between items-center">
 						<h3 className="style pull-left text-2xl font-bold uppercase text-primary">backend</h3>
@@ -42,6 +44,8 @@ export default function Back() {
 					<li><span onClick={() => setActiveFilter('lenguaje')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'lenguaje' ? 'activo' : 'inactivo'}`}>Languages</span></li>
 					<li><span onClick={() => setActiveFilter('app')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'app' ? 'activo' : 'inactivo'}`}>Tools</span></li>
 					<li><span onClick={() => setActiveFilter('patrones')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'patrones' ? 'activo' : 'inactivo'}`}>Patterns</span></li>
+					<li><span onClick={() => setActiveFilter('Framework')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'Framework' ? 'activo' : 'inactivo'}`}>Framework</span></li>
+					<li><span onClick={() => setActiveFilter('BD')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'BD' ? 'activo' : 'inactivo'}`}>Data Base</span></li>
 				</ul>
 
 				<div id="portfoliolist" className="flex flex-wrap justify-center gap-6">

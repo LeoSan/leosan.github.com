@@ -53,7 +53,7 @@ export default function Contact() {
           {contacts.map((contact, index) => (
             <div 
               key={index} 
-              className={`group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border ${contact.borderColor} flex flex-col items-center text-center ${contact.color}`}
+              className={`group bg-white rounded-2xl p-8 shadow-xs hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border ${contact.borderColor} flex flex-col items-center text-center ${contact.color}`}
             >
               {contact.icon}
               <h3 className="text-2xl font-bold text-neutral-800 group-hover:text-white transition-colors duration-300 mb-2">

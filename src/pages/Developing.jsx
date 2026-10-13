@@ -4,6 +4,8 @@ import { projects } from '../data/projects';
 import ProjectCard from '../components/ProjectCard';
 
 export default function Developing() {
+  const sortedProjects = [...projects].sort((a, b) => b.id - a.id);
+
   return (
     <main className="w-full min-h-screen bg-neutral-100 py-12">
       <div className="container mx-auto px-4">
@@ -24,14 +26,14 @@ export default function Developing() {
 
         {/* Quick Scroll Navigation */}
         <div className="flex flex-wrap gap-2 mb-12 justify-center">
-          {projects.map((p) => (
+          {sortedProjects.map((p) => (
             <button 
               key={p.id}
               onClick={() => {
                 const el = document.getElementById(`section-${p.id}`);
                 if(el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
               }}
-              className="bg-white px-4 py-2 rounded-full text-sm font-semibold text-neutral-600 shadow-sm border border-neutral-200 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
+              className="bg-white px-4 py-2 rounded-full text-sm font-semibold text-neutral-600 shadow-xs border border-neutral-200 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
             >
               Projects {p.id}
             </button>
@@ -40,7 +42,7 @@ export default function Developing() {
 
         {/* Projects List */}
         <div className="max-w-6xl mx-auto">
-          {projects.map((project, index) => (
+          {sortedProjects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>

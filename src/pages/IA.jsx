@@ -11,14 +11,17 @@ export default function IA() {
 
 	const filteredCards = list_cards_ia.filter(card => {
 		if (activeFilter === 'all') return true;
-		if (activeFilter === 'lenguaje') return card.tipo === 'lenguaje';
 		if (activeFilter === 'theory') return card.tipo === 'theory';
+		if (activeFilter === 'training') return card.tipo === 'training';
+		if (activeFilter === 'prompt') return card.tipo === 'prompt';
+		if (activeFilter === 'automacion') return card.tipo === 'automacion';
+		if (activeFilter === 'models') return card.tipo === 'models';
 		return true;
 	});
 
 	return (
 		<div className="font-sans antialiased text-neutral-700 bg-neutral-100 min-h-screen">
-			<div className="bg-gray-200 shadow-sm border-b py-4">
+			<div className="bg-gray-200 shadow-xs border-b py-4">
 				<div className="container mx-auto px-4">
 					<div className="flex flex-col md:flex-row justify-between items-center">
 						<h3 className="style pull-left text-2xl font-bold uppercase text-primary">IA & Data Science</h3>
@@ -34,11 +37,13 @@ export default function IA() {
 
 			<div className="mt-6 mx-auto px-4">
 				<Studies />
-
 				<ul id="filters" className="flex flex-wrap gap-4 justify-start" >
 					<li><span onClick={() => setActiveFilter('all')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'all' ? 'activo' : 'inactivo'}`}>All</span></li>
-					<li><span onClick={() => setActiveFilter('lenguaje')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'lenguaje' ? 'activo' : 'inactivo'}`}>Languages</span></li>
+					<li><span onClick={() => setActiveFilter('prompt')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'prompt' ? 'activo' : 'inactivo'}`}>Prompt</span></li>
+					<li><span onClick={() => setActiveFilter('automacion')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'automacion' ? 'activo' : 'inactivo'}`}>Automations</span></li>
+					<li><span onClick={() => setActiveFilter('training')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'training' ? 'activo' : 'inactivo'}`}>Training</span></li>
 					<li><span onClick={() => setActiveFilter('theory')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'theory' ? 'activo' : 'inactivo'}`}>Theory</span></li>
+					<li><span onClick={() => setActiveFilter('models')} className={`filter px-4 py-2 border rounded-full cursor-pointer transition-colors ${activeFilter === 'models' ? 'activo' : 'inactivo'}`}>Models</span></li>
 				</ul>
 
 				<div id="portfoliolist" className="flex flex-wrap justify-center gap-6">

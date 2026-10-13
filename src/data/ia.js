@@ -68,7 +68,63 @@ const list_cards = [
         texto: "Here I showcase the small projects I am developing to learn and improve my new skills in Artificial Intelligence. I focus on training models to solve logical problems through gradual and consistent practice, seeking an opportunity to contribute everything I've learned to a working team.",
         enlace: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS",
         imagen: "ia/practice.png",
-        tipo: "lenguaje"
+        tipo: "training"
+    },
+    {
+        titulo: "Curso de Automatizaciones con n8n",
+        texto: "Aprende a identificar, diseñar y ejecutar workflows en n8n Cloud usando un enfoque low-code, optimizando procesos y reduciendo tareas repetitivas en entornos profesionales.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12245-course/diploma/detalle/",
+        imagen: "ia/CursoN8N_01.png",
+        tipo: "automacion"
+    },
+    {
+        titulo: "Curso de Workflows Profesionales con n8n",
+        texto: "En este curso aprenderás a construir automatizaciones profesionales en n8n, dominando expresiones avanzadas, subworkflows, lógica de enrutamiento, conexiones con IA y casos prácticos de integración con herramientas externas..",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12250-course/diploma/detalle/",
+        imagen: "ia/CursoN8N_02.png",
+        tipo: "automacion"
+    },
+    {
+        titulo: "Curso de n8n Self-Hosted para Empresas",
+        texto: "En este curso aprenderás a desplegar, configurar y operar tu propia instancia de n8n self-hosted, obteniendo control total sobre la infraestructura, seguridad y rendimiento de tus automatizaciones. Avanzaremos desde la instalación en Docker y Kubernetes, hasta el uso del CLI y la API REST de n8n, lo que te permitirá gestionar flujos, usuarios y credenciales de manera programática.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12245-course/diploma/detalle/",
+        imagen: "ia/CursoN8N_03.png",
+        tipo: "automacion"
+    },
+    {
+        titulo: "Curso de Prompt Engineering",
+        texto: "Domina el diseño de prompts efectivos para aprovechar al máximo los modelos de lenguaje generativo como ChatGPT, Claude, Gemini y Microsoft Copilot. Aprende a estructurar instrucciones claras, manejar contexto complejo y automatizar flujos de trabajo con IA en aplicaciones profesionales.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12323-prompt-engineering/diploma/detalle/",
+        imagen: "ia/CursoPrompt_01.png",
+        tipo: "prompt"
+    },
+    {
+        titulo: "Curso Gratis de Introducción a la Inteligencia Artificial",
+        texto: "Domina el diseño de prompts efectivos para aprovechar al máximo los modelos de lenguaje generativo como ChatGPT, Claude, Gemini y Microsoft Copilot. Aprende a estructurar instrucciones claras, manejar contexto complejo y automatizar flujos de trabajo con IA en aplicaciones profesionales.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/11157-course/diploma/detalle/",
+        imagen: "ia/CursoIA_01.png",
+        tipo: "prompt"
+    },
+    {
+        titulo: "Gemini Course",
+        texto: "Learn how to integrate Gemini into your daily workflow and use it as a copilot for tasks such as: writing and improving emails and documents, data analysis, in-depth research with Deep Research, content creation (images with Nano Banana, videos with VEO, presentations and websites with Canvas), and process automation with custom Gems. Master its use with Gmail, Docs, Sheets, and Slides.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12546-course/diploma/detalle/",
+        imagen: "ia/CursoGemini_01.png",
+        tipo: "models"
+    },
+    {
+        titulo: "ChatGPT Course",
+        texto: "Master ChatGPT to analyze data, generate images, create documents with Canvas, and develop custom GPTs. Learn advanced prompting, in-depth research, data visualization, and agent mode to transform your productivity from any device.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/12319-chatgpt/diploma/detalle/",
+        imagen: "ia/CursoChatGPT_01.png",
+        tipo: "models"
+    },
+    {
+        titulo: "GitHub Copilot Course",
+        texto: "Automate software development tasks using GitHub Copilot in VS Code and GitHub.com. Generate code, documentation, APIs, tests, scripts, and templates while resolving bugs and optimizing workflows.",
+        enlace: "https://platzi.com/p/LEONARDCUENCA/curso/11818-github-copilot/diploma/detalle/",
+        imagen: "ia/CursoGithub_01.png",
+        tipo: "models"
     }
 ];
 

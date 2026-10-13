@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -12,6 +12,7 @@ import Courses from './pages/Courses';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 import Developing from './pages/Developing';
+import Learn from './pages/Learn';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/courses" element={<Courses />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/developing" element={<Developing />} />
+          <Route path="/learn" element={<Learn />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

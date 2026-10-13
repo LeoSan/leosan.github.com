@@ -56,35 +56,35 @@ const list_cards = [
         enlace: "https://github.com/LeoSan/EscuelaBackendGo"
     },
     {
-        tipo: "lenguaje",
+        tipo: "BD",
         imagen: "back/post.png",
         titulo: "PostgreSQL Senior",
         texto: "It is definitely my second favorite database modeler, it is another level to handle PLSQL to generate store procedure, trigger, a powerful database engine that is more scalable and faster, generate tables that allow you to store Gigabytes of information. endless data types.",
         enlace: "https://github.com/LeoSan/CarreraFundamentosProgramacion_Platzi_2021/blob/main/02_Intermedio/04_CursoFundamentosBasesDatos/InfoGrafias/2021_Diploma-bd_Platzi.pdf"
     },
     {
-        tipo: "lenguaje",
+        tipo: "BD",
         imagen: "back/mysql.png",
         titulo: "Mysql Senior",
         texto: "It is definitely my favorite database, although now the free version is called Maria Db, here I start my bases in handling tables and SQL queries, create table views, easy integration with Laravel using ORM. The interesting thing is the number of database managers like Workbench, MysqlJob, Admin.",
         enlace: "https://github.com/LeoSan/CarreraFundamentosProgramacion_Platzi_2021/blob/main/02_Intermedio/04_CursoFundamentosBasesDatos/InfoGrafias/2021_Diploma-bd_Platzi.pdf"
     },
     {
-        tipo: "lenguaje",
+        tipo: "BD",
         imagen: "back/oracle10.png",
         titulo: "Oracle10 - Semi Senior",
         texto: "Complex database, I was able to learn and improve my level of creating PLSQL, since it is a programming-oriented database. object, the response speed is impressive, here you can do a little bit of everything, a trigger, a store procedure and the large amount of data types that you can handle, data type arrays, data type objects, even a field to save an entire table, even I still have a lot to know.",
         enlace: "https://github.com/LeoSan/CarreraFundamentosProgramacion_Platzi_2021/blob/main/02_Intermedio/04_CursoFundamentosBasesDatos/InfoGrafias/2021_Diploma-bd_Platzi.pdf"
     },
     {
-        tipo: "lenguaje",
+        tipo: "BD",
         imagen: "back/mongodb.png",
-        titulo: "Mongo DB - Semi Senior",
+        titulo: "Mongo DB - Senior",
         texto: "To get out of the pattern of learning about non-relational databases, mongo is a great choice, it is easy to install and easy to integrate, I am using it in my personal projects, but if I must say that it is a bit complex already that the data query mode is very different, using MERN methodologies to develop it is wonderful how everything is integrated.",
         enlace: "https://github.com/LeoSan/CarreraFundamentosProgramacion_Platzi_2021/blob/main/02_Intermedio/04_CursoFundamentosBasesDatos/InfoGrafias/2021_Diploma-bd_Platzi.pdf"
     },
     {
-        tipo: "lenguaje",
+        tipo: "BD",
         imagen: "back/firebase.png",
         titulo: "Firebase - Junior",
         texto: "It is a NoSQL database, as part of my curiosity I needed to know more about this type of database, I have only practiced in my personal and course projects that I have done, honestly it is easy to use but everything is in the cloud is very recommendation for high speed for those app time line.",
@@ -112,42 +112,42 @@ const list_cards = [
         enlace: "https://github.com/LeoSan/CarreraFundamentosProgramacion_Platzi_2021/blob/main/01_Basico/03_CursoProfesionalGitGitHub/CursoProfesionalGitGitHub.md"
     },
     {
-        tipo: "app",
+        tipo: "Framework",
         imagen: "back/Code_igniter.png",
         titulo: "Codeigniter - Semi Senior",
         texto: "My first php framework, to develop in an orderly and coordinated manner with a work team, here we started with basic design patterns such as MVC and Singleton, everything to integrate a system made up of multiple modules and many interfaces, it was my first experience and I learned to mature my level of coding and development.",
         enlace: "#"
     },
     {
-        tipo: "app",
+        tipo: "Framework",
         imagen: "back/laravel.png",
         titulo: "Laravel V8/9/10/11 - Senior",
         texto: "I have been able to use it in work projects and personal projects, it is very easy to use and learn, it is very robust due to its different methodologies, Laravel can use it only to create APIs or it can also use its views for interfaces. It uses an ORM called Eloquent, very essential to be able to integrate it with any type of database engine, it has become my favorite framework. Already with its latest version 9, it has become more popular.",
         enlace: "https://github.com/LeoSan/CursoPlatziLaravel"
     },
     {
-        tipo: "app",
+        tipo: "Framework",
         imagen: "back/yiiframework.png",
         titulo: "Yii - Junior",
         texto: "An object-oriented framework using PHP, a total paradigm shift more robust and more powerful and super interesting, since it allows you to use the console and execute commands to generate interfaces with its MVC integration and its easy connection to the database for use of its ORM, something without a doubt new and those of us who are from the old school of generating our own queries, something sincerely new and complicated.",
         enlace: "imagen/certificados/2013_CERTIFICADO_YII.jpg"
     },
     {
-        tipo: "app",
+        tipo: "Framework",
         imagen: "back/ZendFramework.png",
         titulo: "ZendPHP - Junior",
         texto: "I honestly didn't like this framework, I only used it in a project that didn't come out in the end, very complicated because I wanted to use controllers for everything, extensive learning, not compatible with many Apache servers and its multiple configurations just to start it makes it tedious, despite having a wizard, something complex during programming if you want to do simple things, I keep the experience and reflections learned at this stage of my professional career.",
         enlace: "#"
     },
     {
-        tipo: "app",
+        tipo: "Framework",
         imagen: "back/django.png",
         titulo: "Django - Senior",
         texto: "If there is a story of love and hate, it is without a doubt this one, I fell in love with this frame, it is very easy to use, but it has its complexity, programming in python is beautiful, since using its philosophy, [Beautiful is better than ugly, Complex is better than complicated, Simple is better than nested], it gives a lot to the programmer, But Django if it makes you happy and angry is a roller coaster, I learned to create interfaces and compose a REST Full to consume services in java, Django has many advantages from speed and security. The sad ones I only used it in one project I would like to use it again.",
         enlace: "https://platzi.com/p/LEONARDCUENCA/curso/82-python-django-2015/diploma/detalle/"
     },
     {
-        tipo: "app",
+        tipo: "Framework",
         imagen: "back/flask.png",
         titulo: "Flask - Senior",
         texto: "While at ASEA, I leveraged Flask to build a specialized application for managing gas and petroleum infrastructure. I was responsible for creating a key exception-handling module that streamlined the registration process for facilities with complex data requirements. Furthermore, I strengthened system security by implementing microservices dedicated to e-signature authentication.",
@@ -168,35 +168,35 @@ const list_cards = [
         enlace: "#"
     },
     {
-        tipo: "app",
+        tipo: "BD",
         imagen: "back/pgadmin.png",
         titulo: "PG Admin 4 - Senior",
         texto: "Many programmers seek their own comfort, for me knowing these tools allows more agility and ease to model your own databases, provide support and maintenance efficiently, PgAdmin allows me to achieve these goals, its easy use and multiple platforms can be used in Linux and Windows.",
         enlace: "#"
     },
     {
-        tipo: "app",
+        tipo: "BD",
         imagen: "back/sqlyog.jpg",
         titulo: "Sqlyog - Senior",
         texto: "This tool allowed me to learn more about mysql, also to model and understand this paradigm of databases, this tool is undoubtedly easy to use and adapts to your needs, of course the free version is very limited, but the licensed one allows you to perform reverse reengineering, model and even create your entity relational models in an easy and simple way.",
         enlace: "#"
     },
     {
-        tipo: "app",
+        tipo: "BD",
         imagen: "back/dbeaver.png",
         titulo: "DBeaver - Senior",
         texto: "During my tenure at ASEA, I utilized DBeaver as a centralized tool for managing and querying heterogeneous databases, including SQL Server, MySQL, PostgreSQL, and MongoDB. My work focused on data integrity validation and ensuring information consistency throughout the development lifecycle of platforms built with Java and Python.",
         enlace: "#"
     },
     {
-        tipo: "app",
+        tipo: "BD",
         imagen: "back/sqlserver.png",
         titulo: "Sqlserver 2014",
         texto: "If it is to name a tedious database administrator, without a doubt it is this one, I will not deny it is easy to use, but sometimes it makes you angry because of its limitations, without a doubt it is the favorite database for those who are in Java. I already have a lot of experience, since I have been able to collaborate on multiple projects over the course of my career.",
         enlace: "#"
     },
     {
-        tipo: "app",
+        tipo: "BD",
         imagen: "back/workbench.png",
         titulo: "Workbench",
         texto: "This tool is very robust, since it is oriented to visual and object development, it has endless functionalities from reengineering, exporting your data in multiple formats, and importing and connecting to remote databases, I definitely recommend this tool to start in the database paradigm.",
