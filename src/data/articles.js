@@ -167,7 +167,7 @@ When handling edge computer vision tasks, do you lean towards lean custom models
         imagen: "articulo/document_vision.png",
         url: null,
         code: "https://github.com/LeoSan/MaestriaAnalisisDatosBigData_UNIR_2024/tree/main/04_PRACTICAS/02_EJERCICIO_CNN_PROPIO_SET",
-        urlLinkedIn: null,
+        urlLinkedIn: 'https://www.linkedin.com/feed/update/urn:li:activity:7515804717051191297/',
         likes: 5
     },
 
